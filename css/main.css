@@ -1,0 +1,577 @@
+@charset "utf-8";
+
+
+.sliders{
+	background-color: #212121;
+	width:100%;
+	display: flex;
+
+}
+.text h1{
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 28px;
+}
+.sliderimage{
+    padding: 30px;
+    margin-left: 70px;  
+}
+.material{
+	justify-content:center;
+	font-family: Roboto;
+	font-size: 28px;
+	cursor: pointer;
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: middle;
+	z-index: 1;
+	transition: all .3s ease-out;
+	text-decoration: none;
+	color: #fff;
+	background-color: #212121;
+	text-align: center;
+	letter-spacing: .5px;
+	border-radius: 2px;
+	display: inline-block;
+	line-height: 36px;
+	outline: 0;
+	padding: 2.2rem;
+	text-transform: uppercase;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.material:hover{
+	background-color: black;
+}
+.linkdrop{
+	width: 17%;
+	font-size: 24px;
+	font-family: Roboto;
+	font-weight: 200;
+	color: black !important;
+	list-style-type: none;
+    margin-top: 28px;
+}
+.linkdrop a{
+	margin-top: 12px;
+	font-size: 24px;
+	font-family: Roboto;
+	font-weight: 200;
+	color: black !important;
+	list-style-type: none;
+}
+.linkdrop a:link{
+	color: black;
+	margin-top: 12px;
+	font-size: 24px;
+	font-family: Roboto;
+	font-weight: 200;
+	color: black !important;
+	list-style-type: none;
+}
+.linkdrop a:visited{
+	text-decoration: none;
+	color: black ;
+}
+.linkdrop a:hover{
+	text-decoration: none;
+	color: #e6882c !important;
+
+}
+.linkdrop a:active{
+	text-decoration: none;
+	color: #e6882c;
+
+}
+
+.linkhead{
+	font-size: 32px;
+	font-family: Roboto;
+	font-weight: bolder;
+	color: black;
+	list-style-type: none;
+	padding-top: 10px;
+
+}
+.logo2{
+	margin-left: -100px;
+}
+.text p{
+	font-family: Roboto;
+	font-size: 24px;
+}
+.btn-active{
+	background-color: #121212;
+}
+inner>.item>img {
+  margin-left: 130px !important;
+  line-height: 1;
+}
+.item{
+	display: flex;
+}
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 30%;
+      margin: auto;
+  }
+  
+.container2 {
+	width:100%;
+   padding-right: 0px !important; 
+   padding-left: 0px !important; 
+  margin-right: auto;
+  margin-left: auto;
+}
+.mobile{
+	display: none;
+}
+.nav{
+	padding-bottom: 22px;
+	background-color: #212121;
+	top:20px;
+	justify-content:center;
+	width: 100%;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+}
+.nav li:active{
+	border-bottom: solid 4px white;
+	text-decoration: none;
+	background-color: none!important;
+	color: white;
+}
+.nav li a{
+	padding-top: 12px;
+}
+.dropdown1{
+	background-color: white;
+	height: 120px;
+}
+.dropdown ul{
+    list-style-type: none;
+}
+.dropdown ul li{
+    list-style-type: none;
+}
+.myClass{
+	background-color: #171717;
+}
+.animate-show.ng-hide-add.ng-hide-add-active,
+.animate-show.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition: all linear 5s;
+  transition: all linear 5s !important;
+}
+.my-element.ng-hide-add, .my-element.ng-hide-remove {
+  /* this is required as of 1.3x to properly
+     apply all styling in a show/hide animation */
+  transition: 5s linear all !important;
+}
+
+
+
+.links1 a{
+color: white;
+padding-bottom: 1px;
+background-color: none;
+}
+.links1{
+font-family: Roboto medium;
+font-size: 26px;
+text-decoration: none;
+color: white;
+}
+
+.links1 a:active{
+	text-decoration: none;
+	color: white;
+	border-bottom: solid 4px white;
+}
+.links1 a:visited{
+	text-decoration: none;
+	color: white;
+	border-bottom: solid 4px white;
+
+
+}
+.links1 a:hover{
+	text-decoration: none;
+	color: white;
+	border-bottom: solid 4px white;
+}
+.links a{
+	text-align: center;
+color: white;
+padding-top: 10px;
+padding-bottom: 1px;
+background-color: none;}
+.links{
+width: 100%;
+font-family: Roboto medium;
+font-size: 22px;
+text-decoration: none !important;
+color: white;
+}
+.links a:hover{
+	text-decoration: none !important;
+	color: white;
+	
+}
+.links a:active{
+	text-decoration: none !important;
+	color: white;
+	
+}
+.links a:visited{
+	text-decoration: none;
+	color: white;
+}
+.logo5{
+		display: block;
+		margin-left: 40%;
+		display: block;
+		vertical-align: center;
+		margin-right: auto;
+		padding: 50px;
+	}
+.menu li{
+	list-style-type: none !important;
+	list-style: none;
+}
+.icon{
+	margin-left: 22px;
+}
+
+.menu{
+	list-style-type: none !important;
+	width:25%;
+	padding:20px;
+	flex-direction:row;
+	flex-wrap:no-wrap;
+	cursor:pointer;
+	text-align: center;
+}
+.menu:active{
+	background-color: #121212;
+	text-decoration: none;
+}
+.menu:hover{
+	background-color: #121212;
+	text-decoration: none;
+}
+.menu:visited{
+	text-decoration: none;
+	background-color: #121212;
+}
+.row{
+	margin-left: 0px !important;
+}
+a:hover{
+	text-decoration: none !important;
+}
+a:active{
+	text-decoration: none !important;
+}
+a:visited{
+	text-decoration: none !important;
+}
+.logo3{
+	display: none;
+}
+.logo4{
+	display: none;
+}
+.mobile{
+	display: none;
+}
+
+@media screen and (max-width: 1268px) {
+         .side-collapse-container{
+             width:100%;
+             position:relative;
+             left:0;
+             transition:left .4s;
+         }
+         .mobile{
+         	display: block;
+         }
+         .dropdown1{
+         	display: none;
+         }
+         .desktop{
+         	display: none;
+         }
+         .side-collapse-container.out{
+             left:200px;
+         }
+         .logo3{
+         	display: block;
+         }
+         .logo{
+         	display: none;
+         }
+         .side-collapse {
+             top:50px;
+             bottom:0;
+             left:0;
+             width:250px;
+             position:fixed;
+             overflow:hidden;
+             transition:width .4s;
+         }
+         .side-collapse.in {
+             width:0;
+         }
+         .links1 {
+         	text-align: center;
+         	clear: both;
+         }
+     }
+.maintext{
+	padding-top:460px;
+	padding-bottom:380px;
+}
+@media only screen and (max-width: 1268px){
+	.logo4{
+		display: block;
+		margin-left: auto;
+		display: block;
+		vertical-align: center;
+		margin-right: auto;
+		padding: 50px;
+	}
+	.logo5{
+		display: block;
+		margin-left: auto;
+		display: block;
+		vertical-align: center;
+		margin-right: auto;
+		padding: 50px;
+	}
+	.maintext{
+		padding-top: 50px;
+		padding-bottom: 200px;
+	}
+}
+@media only screen and (max-width: 1268px)  {
+	.underwhite {
+		  margin-left: 0px !important;
+		  font-size: 54px !important;
+		  font-weight: 100 !important;
+		  font-family: "Roboto thin";
+		  color: white;
+		  text-align: center !important;
+		}
+		.container-fluid {
+			text-align: center !important;
+			margin-left: auto !important;
+			margin-right: auto !important;
+
+		}
+	.underwhite2 {
+		margin-left: 0px !important;
+	  font-size: 64px !important;
+	  font-weight: bold !important;
+	  font-family: "Roboto";
+	  color: white;
+	  text-align: center !important;
+	}
+	.logo3{
+		display: block;
+		margin-left: auto;
+		display: block;
+		margin-right: auto;
+	}
+	
+	
+	
+	.row {
+		text-align: center !important;
+		margin-left: 4px !important;
+		margin-right: 4px !important;
+
+	}
+	
+.container2 {
+  width: 100%;
+}
+
+  .menu{
+  	list-style-type: none !important;
+  	width:50% !important;
+  	padding:20px;
+  	flex-direction:row;
+  	flex-wrap:no-wrap;
+  	cursor:pointer;
+  	text-align: center;
+  }
+  .menu a{
+  	text-decoration: none;
+    }
+  .menu a:hover{
+  	text-decoration: none;
+  }
+  .menu a:active{
+  	text-decoration: none;
+  }
+
+	
+	.logo{
+		margin-left: 74px;
+	}
+
+}
+
+.logo2 {
+  margin-top: -56px;
+}
+
+}
+pre {
+          tab-size: 8;
+      }
+
+
+@media only screen and (max-width: 997px) and (min-width: 509px) {
+	.container2{
+		width:100%;
+	}
+	.logo2{
+		display: none;
+	}
+	
+	.underwhite {
+		  font-size: 54px !important;
+		  font-weight: 100 !important;
+		  font-family: "Roboto thin";
+		  color: white;
+		  text-align: center !important;
+		  margin-left: 
+		}
+	.underwhite2 {
+	  font-size: 64px !important;
+	  font-weight: bold !important;
+	  font-family: "Roboto";
+	  color: white;
+	  text-align: center !important;
+	}
+	
+	
+	.container-fluid {
+		text-align: center !important;
+
+	}
+	.menu{
+	list-style-type: none !important;
+	width:50% !important;
+	padding:20px;
+	flex-direction:row;
+	flex-wrap:no-wrap;
+	cursor:pointer;
+	text-align: center;
+}
+.menu a{
+	text-align: center;
+}
+}
+@media screen and (min-width: 0px) and (max-width:1200px){
+	.main-text{
+		font-family:Helvetica Light;
+		font-size: 1.4em !important;
+		color:white;
+		font-weight: 300;
+		margin-left: 70px;
+		margin-right:40px;
+
+	}
+	.logo2{
+		display: none;
+	}
+
+
+
+}
+   
+.link:hover{
+	text-decoration: none !important;
+}
+/*.Plus {
+	border-radius: 50%;
+    color:#5d83ff;
+	width:45px;
+	height:45px;
+	padding: 4px;
+	text-align: match-parent;
+	border:2px solid #5d83ff;
+	font-size: 38px;
+	}*/
+
+	.underwhite {
+	  display: inline;
+	  font-size: 64px;
+	  font-weight: 100;
+	  font-family: "Roboto thin";
+	  color: white;
+	}
+.underwhite2 {
+  display: inline;
+  font-size: 64px;
+  font-weight: bold;
+  font-family: "Roboto";
+  color: white;
+}
+
+.link_menu a:hover {
+	color: white !important;
+	text-decoration: none !important;
+	border-bottom: solid 5px white !important;
+	}
+.link_menu a:active{
+	border-bottom: solid 5px white !important;
+}
+.link_menu a:visited{
+	border-bottom: solid 5px white !important;
+	color: white;
+	text-decoration: none !important;
+}
+.link_menu a {
+	font-size: 24px;
+	display: inline;
+	font-family: "Roboto";
+	color: white;
+	padding-bottom: 4px;
+}
+
+.menu2 {
+   width:90%;
+   display: flex;
+}
+.logo {
+	   padding-top: 25px;
+	   /* height: 150px; */
+	   /* width: 240px; */
+}
+.contact{
+	font-family: Roboto;
+	color: #fcfcfc;
+	font-weight: 200;
+	font-size: 22px;
+
+}
+.footer{
+	background-color: #171717;
+	font-family: Roboto ;
+	color: #fcfcfc;
+	font-weight: 200;
+	font-size: 22px;
+}
+.borderdown{
+	text-align: center;
+	bottom:0;
+	position: absolute;
+	color:#fcfcfc;
+	font-family: Roboto;
+	font-size: 22px;
+	background-color: #212121;
+}
+

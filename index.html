@@ -1,0 +1,313 @@
+<!doctype html>
+<html ng-app="tbi">
+<head>
+
+	<meta charset="utf-8">
+	<title>VIT-TBI</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="js/jquery.js"></script>
+    <script src="js/tbi.js"></script>
+	<script src="js/smooth-scroll.js"></script>
+	
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {   
+                var sideslider = $('[data-toggle=collapse-side]');
+                var sel = sideslider.attr('data-target');
+                var sel2 = sideslider.attr('data-target-2');
+                sideslider.click(function(event){
+                    $(sel).toggleClass('in');
+                    $(sel2).toggleClass('out');
+                });
+            });
+    $('#wrap').tabs({
+        select: function(event, ui) {
+            $(this).find('li').removeClass('myclass').eq(ui.index).addClass('myclass')
+        }
+    });
+    </script>
+    <!--<script type="text/javascript" src="js/angular.js"></script>-->
+	<!--<script src="js/jquery-2.1.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/hamburger.css"/>
+
+	<link rel="stylesheet" type="text/css" href="css/hamburger.css"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <!--<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">-->
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+   
+</head>
+<body>
+<div ng-controller="navController as navctrl">
+<div role="banner" class="navbar navbar-fixed-top navbar-inverse" class="container-fluid nav ">
+       <div class="navbar-header">
+         <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><h1 class="logo3"style="color:white;font-size:20px;font-family:Roboto;text-align:start;">Menu</h1>
+       </div>
+       <div class="navbar-inverse side-collapse in">
+         <nav role="navigation" class="navbar-collapse">
+           <ul class="nav navbar-nav">
+             <li style="width: 14.66666667%;"><img class="logo" src="images/logo.png"></li>
+             <li class="links1" ng-click="navctrl.selectTab(0)"><a  style="position: relative;padding-top: 50px;"href="#home">Home</a></li>
+             <li class="links1" ng-click="navctrl.selectTab(0)"><a  style="position: relative;padding-top: 50px;"href="#about_tbi">About</a></li>
+             <li class="links1" ng-click="navctrl.selectTab(1)"><a  style="position: relative;padding-top: 50px;"href="#services">Facilities & Services<span class="caret"></span></a></li>
+             <li class="links1" ng-click="navctrl.selectTab(2)"><a  style="position: relative;padding-top: 50px;"href="#">Our Startups<span class="caret"></span></a></li>
+             <li class="links1" ng-click="navctrl.selectTab(3)"><a  style="position: relative;padding-top: 50px;"href="#">News & Events<span class="caret"></span></a></li>
+             <li class="links1" ng-click="navctrl.selectTab(0)"><a  style="position: relative;padding-top: 50px;"href="#">CSR Partenership</a></li>
+             <li class="links1" ng-click="navctrl.selectTab(0)"><a  style="position: relative;padding-top: 50px;"href="#">Past Events</a></li>
+           </ul>
+         </nav>
+       </div>
+       <div id="fsdrop" class="container-fluid dropdown1 animate-show" ng-show="navctrl.isSelected(1)">
+   <div class="container-fluid" style="display:flex;">
+   <div style="width:16%">
+    <h1 class="linkhead">FACILITIES AND <br>SERVICES</h1>
+  </div>
+  <div class="col-lg-1 col-md-1 " style="width:2%"><img style="margin-top:-21px"src="images/line.png"></div>
+  <ul class="menu2" style="width:90%;display: flex;">
+    <li class="linkdrop"><a href="">Infrastructure</a></li>
+    <li class="linkdrop"><a href="">Access<br>to Funding</a></li>
+    <li class="linkdrop"><a href="">Soft Landing<br> Support</a></li>
+    <li class="linkdrop"><a href="">Training &<br> Development</a></li>
+    <li class="linkdrop"><a href="">Projects &<br> Partnership</a></li>
+    <li class="linkdrop"><a href="">Monitoring</a></li>
+    <li class="linkdrop"><a href="">IPR Cell</a></li>
+  </ul>
+  </div>
+</div>
+<div id="osdrop" class="container-fluid dropdown1 animate-show" ng-show="navctrl.isSelected(2)">
+   <div class="col-lg-12 col-md-12">
+   <div class="borderight col-lg-3 col-md-3">
+       <h1 class="linkhead">OUR <br>STARTUPS</h1>
+   </div>
+   <div class="col-lg-1 col-md-1"><img style="margin-top:-21px"src="images/line.png"></div>
+   <ul>
+       <li class="linkdrop col-lg-2 col-md-2"><a href="">Projects<br>Under Incubation</a></li>
+       <li class="linkdrop col-lg-2 col-md-2"><a href="">Graduated<br> Companies</a></li>
+       <li class="linkdrop col-lg-2 col-md-2"><a href="">Anchor<br> Companies</a></li>
+   </ul>
+   </div>
+</div>
+<div id="news" class="container-fluid dropdown1 animate-show" ng-show="navctrl.isSelected(3)">
+   <div class="col-lg-12 col-md-12">
+   <div class="borderight col-lg-2 col-md-2">
+       <h1 class="linkhead">NEWS & <br>EVENTS</h1>
+   </div>
+   <div class="col-lg-1 col-md-1"><img style="margin-top:-21px"src="images/line.png"></div>
+   <ul>
+       <li class="linkdrop col-lg-3 col-md-3"><a href="">Promotional<br>Events</a></li>
+    <li class="linkdrop col-lg-3 col-md-3"><a href="">Newsletter &<br>Press Release</a></li>
+   </ul>
+   </div>
+</div>
+</div>
+
+</div>
+
+
+     <!--
+<div class="nav container-fluid">
+        <li class="col-lg-2 col-md-3 col-sm-12" style="width: 14.66666667%;"><img class="logo" src="images/logo.png"></li>
+        <li class="col-lg-1 col-md-1 links1" ><a  style="position: relative;padding-top: 50px;"href="#home">Home</a></li>
+        <li class="col-lg-1 col-md-1 links1" ><a  style="position: relative;padding-top: 50px;"href="#about_tbi">About</a></li>
+        <li class="col-lg-2 col-md-1 links1" style="width: 14.66666667%;"><a  style="position: relative;padding-top: 50px;"href="#services">Facilities & Services<span class="caret"></span></a></li>
+        <li class="col-lg-2 col-md-1 links1" style="width: 14.66666667%;"><a  style="position: relative;padding-top: 50px;"href="#">Our Startups<span class="caret"></span></a></li>
+        <li class="col-lg-2 col-md-1 links1" style="width: 14.66666667%;"><a  style="position: relative;padding-top: 50px;"href="#">News & Events<span class="caret"></span></a></li>
+        <li class="col-lg-2 col-md-1 links1" style="width: 14.66666667%;"><a  style="position: relative;padding-top: 50px;"href="#">CSR Partenership</a></li>
+        <!--li class="col-lg-1 col-md-1 links1"><a  href="#">Past Events</a></li>
+        <li class="dropdown links1 col-lg-1 col-md-1">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Past Events<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+        </li>
+    </div>
+    -->
+          <!--End nav bar-->
+
+<div id="home" class="side-collapse-container"style="background-image: url(images/background3.jpg); background-size:cover;background-repeat:no-repeat;background-position: center;">
+
+ <div class="container-fluid maintext">
+ <div class="logo4">
+     <img src="images/logo.png">    
+ </div>
+<div class="col-lg-8 col-md-8">
+    <h1 class="underwhite">We don't create JOBS</h1><br>
+    <h1 class="underwhite2">We create OPPORTUNITIES..</h1>
+</div>
+<div class="col-lg-4 col-md-4">
+    <img class="logo2" src="images/logo2.png">
+</div>
+<br>
+<div class="logo5">
+  <div class="material" href="#">APPLY NOW</div>
+  </div>
+</div>
+</div>
+
+
+<div id="Mainbody" class="side-collapse-container" ng-controller="tbiController as tbictrl">
+ <div class="sliders">
+    <div id="wrap"class="links">
+      <li class="menu col-lg-6 col-md-6 col-sm-6 col-xs-6" ng-class="{ 'btn-active' : tbictrl.isSelected(1) }" ng-click="tbictrl.selectTab(1)"><a href="#"data-id="upc">Upcoming Events</a><span><img class="icon"src="images/upc.png"></img></span></li>
+      <li class="menu col-lg-6 col-md-6 col-sm-6 col-xs-6" ng-class="{ 'btn-active' : tbictrl.isSelected(2) }" ng-click="tbictrl.selectTab(2)"><a href="#"data-id="news">Latest News</a><span><img class="icon"src="images/events.png"></img></span> </li>
+    </div>
+    </div>
+    <div class="container2 current" id="upc" ng-show="tbictrl.isSelected(1)">
+       <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="col-lg-4 col-md-4 col-sm-12 sliderimage" src="images/sliderimage1.jpg" alt="Chania">
+          <div class="col-lg-6 col-md-4 col-sm-12 text">
+              <h1>Event Name</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
+          </div>
+        </div>
+
+        <div class="item">
+          <img class="col-lg-4 col-md-4 col-sm-12 sliderimage" src="images/sliderimage1.jpg" alt="Chania">
+          <div class="col-lg-6 col-md-4 col-sm-12 text">
+              <h1>Event Name</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
+          </div>
+        </div>
+
+        <div class="item">
+          <img class="col-lg-4 col-md-4 col-sm-12 sliderimage" src="images/sliderimage1.jpg" alt="Flower">
+          <div class="col-lg-6 col-md-4 col-sm-12 text">
+              <h1>Event Name</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
+          </div>
+        </div>
+
+        <div class="item">
+          <img class="col-lg-4 col-md-4 col-sm-12 sliderimage" src="images/sliderimage1.jpg" alt="Flower">
+          <div class="col-lg-6 col-md-4 col-sm-12 text">
+              <h1>Event Name</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+</div>
+    <div class="container2" id="news" ng-show="tbictrl.isSelected(2)">
+       <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="col-lg-4 col-md-4 col-sm-12  sliderimage" src="images/sliderimage1.jpg" alt="Chania">
+          <div class="col-lg-6 col-md-4 col-sm-12 text">
+              <h1>News & Events</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
+          </div>
+        </div>
+
+        <div class="item">
+          <img class="col-lg-4 col-md-4 col-sm-12 sliderimage" src="images/sliderimage1.jpg" alt="Chania">
+          <div class="col-lg-6 col-md-4 col-sm-12 text">
+              <h1>News & Events</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
+          </div>
+        </div>
+
+        <div class="item">
+          <img class="col-lg-4 col-md-4 col-sm-12 sliderimage" src="images/sliderimage1.jpg" alt="Flower">
+          <div class="col-lg-6 col-md-4 col-sm-12 text">
+              <h1>News & Events</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
+          </div>
+        </div>
+
+        <div class="item">
+          <img class="col-lg-4 col-md-4 col-sm-12 sliderimage" src="images/sliderimage1.jpg" alt="Flower">
+          <div class="col-lg-6 col-md-4 col-sm-12 text">
+              <h1>News & Events</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+</div>
+</div>
+<div class="footer container-fluid side-collapse-container">
+<div class="col-lg-8">
+
+    
+</div>
+ <div class="contact col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
+  <h3 style="color:#fcfcfc; font-weight:bolder;font-size:28px;">Address</h3>
+  <p>VIT - Technology Business Incubator,
+Vellore Institute of Technology,
+Vellore – 632 014, Tamil Nadu, India. 
+Tel. +91 416 224 3097
+Email: vittbi@vit.ac.in, vittbi@yahoo.co.in </p>
+</div>
+ 
+</div>
+<div class="borderdown col-lg-12 col-md-12 col-sm-12 col-xs-12 side-collapse-container">
+    <h3>© 2014 Copyright Vellore Institute Of Technology. All rights reserved.</h3>
+</div>
+<script>
+    smoothScroll.init();
+   
+</script>
+
+
+
+
+</body>
+</html>
