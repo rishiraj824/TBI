@@ -1,7 +1,7 @@
 (function()
 {
 	var app=angular
-	.module('tbi',[]);
+	.module('tbi',['ngAnimate']);
 	app.controller('tbiController', function(){
 		this.tab = 1;
 		this.selectTab = function(setTab) {
@@ -24,4 +24,5 @@
 			return this.tab === checkTab;
 		};
 	});
+
 })();

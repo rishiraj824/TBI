@@ -2,8 +2,8 @@
 
 @font-face {
    font-family: 'TBI';
-     src: url('Roboto-Bold.ttf') format('truetype'),
-      url('Roboto-Medium.ttf'), url('Roboto-Regular.ttf') ;
+     src: url('css/Roboto-Bold.ttf') format('truetype'),
+      url('css/Roboto-Medium.ttf'), url('css/Roboto-Regular.ttf') ;
 }
 .sliders{
 	background-color: #212121;
@@ -161,17 +161,16 @@ inner>.item>img {
 .myClass{
 	background-color: #171717;
 }
-.animate-show.ng-hide-add.ng-hide-add-active,
-.animate-show.ng-hide-remove.ng-hide-remove-active {
-  -webkit-transition: all linear 5s;
-  transition: all linear 5s !important;
-}
-.my-element.ng-hide-add, .my-element.ng-hide-remove {
-  /* this is required as of 1.3x to properly
-     apply all styling in a show/hide animation */
-  transition: 5s linear all !important;
-}
 
+.animate-show {
+  -moz-transition:all linear 1s;
+  -o-transition:all linear 1s;
+  transition:all linear 1s;
+  display:block!important;
+  -webkit-transition:all linear 1s;
+  transition:all linear 1s;
+  opacity:1;
+}
 
 
 .links1 a{
