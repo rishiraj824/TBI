@@ -1,6 +1,17 @@
 @charset "utf-8";
 
-
+@font-face {
+   font-family: "TBI";
+     src: url('fonts/Roboto-Bold.ttf'); 
+     /* IE9 Compat Modes */
+     src: url('fonts/Roboto-Medium.ttf') 
+     src: url('fonts/Roboto-Regular.ttf') 
+     src: url('fonts/Roboto.ttf') format('embedded-opentype'), /* IE6-IE8 */
+          url('fonts/Roboto.ttf') format('woff2'), /* Super Modern Browsers */
+          url('fonts/Roboto.ttf') format('woff'), /* Pretty Modern Browsers */
+          url('fonts/Roboto.ttf')  format('truetype'), /* Safari, Android, iOS */
+          url('fonts/Roboto.ttf') format('svg'); /* Legacy iOS */
+}
 .sliders{
 	background-color: #212121;
 	width:100%;
@@ -84,7 +95,7 @@
 }
 
 .linkhead{
-	font-size: 32px;
+	font-size: 24px;
 	font-family: Roboto;
 	font-weight: bolder;
 	color: black;
@@ -177,7 +188,7 @@ background-color: none;
 }
 .links1{
 font-family: Roboto medium;
-font-size: 26px;
+font-size: 18px;
 text-decoration: none;
 color: white;
 }
@@ -292,6 +303,9 @@ a:visited{
              left:0;
              transition:left .4s;
          }
+         .icon{
+         	margin-left: 4px !important;
+         }
          .mobile{
          	display: block;
          }
@@ -353,38 +367,51 @@ a:visited{
 		padding-bottom: 200px;
 	}
 }
-@media only screen and (max-width: 1268px)  {
-	.underwhite {
+@media only screen and (max-width:1000px){
+    .underwhite {
 		  margin-left: 0px !important;
-		  font-size: 54px !important;
+		  font-size: 34px !important;
 		  font-weight: 100 !important;
 		  font-family: "Roboto thin";
 		  color: white;
 		  text-align: center !important;
 		}
-		.container-fluid {
-			text-align: center !important;
-			margin-left: auto !important;
-			margin-right: auto !important;
-
+	.underwhite2 {
+	  margin-left: 0px !important;
+	  font-size: 36px !important;
+	  font-weight: bold !important;
+	  font-family: "Roboto";
+	  color: white;
+	  text-align: center !important;
+	}	
+	
+    
+}
+@media only screen and (max-width: 1268px)  {
+	.underwhite {
+		  margin-left: 0px !important;
+		  font-size: 34px !important;
+		  font-weight: 100 !important;
+		  font-family: "Roboto thin";
+		  color: white;
+		  text-align: center !important;
 		}
+		
 	.underwhite2 {
 		margin-left: 0px !important;
-	  font-size: 64px !important;
+	  font-size: 36px !important;
 	  font-weight: bold !important;
 	  font-family: "Roboto";
 	  color: white;
 	  text-align: center !important;
 	}
+	
 	.logo3{
 		display: block;
 		margin-left: auto;
 		display: block;
 		margin-right: auto;
 	}
-	
-	
-	
 	.row {
 		text-align: center !important;
 		margin-left: 4px !important;
@@ -423,7 +450,8 @@ a:visited{
 }
 
 .logo2 {
-  margin-top: -56px;
+  margin-top: -46px;
+  width:450px;
 }
 
 }
@@ -547,6 +575,7 @@ pre {
    display: flex;
 }
 .logo {
+       width:150px;
 	   padding-top: 25px;
 	   /* height: 150px; */
 	   /* width: 240px; */
