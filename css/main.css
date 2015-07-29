@@ -337,6 +337,7 @@ a:visited{
 	padding-top:460px;
 	padding-bottom:380px;
 }
+
 @media only screen and (max-width: 1268px){
 	.logo4{
 		display: block;
@@ -355,9 +356,13 @@ a:visited{
 		padding: 50px;
 	}
 	.maintext{
+		text-align: center;
 		padding-top: 50px;
 		padding-bottom: 200px;
 	}
+}
+.foot{
+	color:#fcfcfc; font-weight:bolder;font-size:28px;
 }
 @media only screen and (max-width:1000px){
     .underwhite {
@@ -376,7 +381,33 @@ a:visited{
 	  color: white;
 	  text-align: center !important;
 	}	
-	
+	.material{
+	font-size: 1.2em;
+    padding: 1.2rem;
+	}
+	.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%; 
+    margin: auto;
+}
+.text h1{
+	font-size: 1.2em;
+}
+.text p{
+	font-size:0.8em;
+}
+.links {
+	font-size: 1em;
+}
+.contact h3{
+	font-size: 1.2em;
+}
+.contact p{
+	font-size: 0.8em;
+}
+.borderdown h3{
+	font-size: 0.5em;
+}
+
     
 }
 @media only screen and (max-width: 1268px)  {
