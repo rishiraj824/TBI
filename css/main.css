@@ -165,6 +165,10 @@ inner>.item>img {
 .myClass{
 	background-color: #171717;
 }
+.fade.ng-hide {
+  transition:0.5s linear all;
+  opacity:0;
+}
 
 .animate-show {
   -moz-transition:all linear 1s;
@@ -617,11 +621,10 @@ pre {
 	font-size: 22px;
 
 }
-.footer{
-	position:absolute;
-	 bottom: 0;
-	 height: 170px;
-	background-color: #171717;
+.footer {
+    position: relative;
+    bottom: 0;
+    background-color: #171717;
 }
 .borderdown{
 	margin:0;
