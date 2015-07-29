@@ -30,9 +30,6 @@
     </script>
     <!--<script type="text/javascript" src="js/angular.js"></script>-->
   <!--<script src="js/jquery-2.1.1.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/hamburger.css"/>
-
-  <link rel="stylesheet" type="text/css" href="css/hamburger.css"/>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
 
@@ -44,8 +41,8 @@
    
 </head>
 <body>
-<div ng-controller="navController as navctrl">
-<div role="banner" class="navbar navbar-fixed-top navbar-inverse" class="container-fluid nav ">
+   <div ng-controller="navController as navctrl" ng-controller="Mainctrl">
+   <div role="banner" class="navbar navbar-fixed-top navbar-inverse" class="container-fluid nav ">
        <div class="navbar-header">
          <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><h1 class="logo3"style="color:white;font-size:20px;font-family:Roboto;text-align:start;">Menu</h1>
        </div>
@@ -53,17 +50,17 @@
          <nav role="navigation" class="navbar-collapse">
            <ul class="nav navbar-nav">
              <li style="width: 14.66666667%;"><img class="logo" src="images/logo.png"></li>
-             <li class="links1" ng-click="navctrl.selectTab(0)"><a  style="position: relative;padding-top: 50px;"href="#home">Home</a></li>
-             <li class="links1" ng-click="navctrl.selectTab(0)"><a  style="position: relative;padding-top: 50px;"href="#about_tbi">About</a></li>
-             <li class="links1" ng-click="navctrl.selectTab(1)"><a  style="position: relative;padding-top: 50px;"href="#services">Facilities & Services<span class="caret"></span></a></li>
-             <li class="links1" ng-click="navctrl.selectTab(2)"><a  style="position: relative;padding-top: 50px;"href="#">Our Startups<span class="caret"></span></a></li>
-             <li class="links1" ng-click="navctrl.selectTab(3)"><a  style="position: relative;padding-top: 50px;"href="#">News & Events<span class="caret"></span></a></li>
-             <li class="links1" ng-click="navctrl.selectTab(0)"><a  style="position: relative;padding-top: 50px;"href="#">CSR Partenership</a></li>
-             <li class="links1" ng-click="navctrl.selectTab(0)"><a  style="position: relative;padding-top: 50px;"href="#">Past Events</a></li>
+             <li  class="links1" ng-click="navctrl.selectTab(0)"><a  style="position: relative;padding-top: 50px;"href="#home">Home</a></li>
+             <li  class="links1" ng-click="navctrl.selectTab(0)"><a  style="position: relative;padding-top: 50px;"href="#about_tbi">About</a></li>
+             <li ng-mouseenter="show1 = true" ng-mouseleave="show1 = false" class="links1" ng-click="navctrl.selectTab(1)"><a  style="position: relative;padding-top: 50px;"href="#services">Facilities & Services<span class="caret"></span></a></li>
+             <li ng-mouseenter="show2 = true" ng-mouseleave="show2 = false" class="links1" ng-click="navctrl.selectTab(2)"><a  style="position: relative;padding-top: 50px;"href="#">Our Startups<span class="caret"></span></a></li>
+             <li ng-mouseenter="show3 = true" ng-mouseleave="show3 = false" class="links1" ng-click="navctrl.selectTab(3)"><a  style="position: relative;padding-top: 50px;"href="#">News & Events<span class="caret"></span></a></li>
+             <li  class="links1" ng-click="navctrl.selectTab(0)"><a  style="position: relative;padding-top: 50px;"href="#">CSR Partenership</a></li>
+             <li  class="links1" ng-click="navctrl.selectTab(0)"><a  style="position: relative;padding-top: 50px;"href="#">Past Events</a></li>
            </ul>
          </nav>
        </div>
-       <div id="fsdrop" class="container-fluid dropdown1" ng-animate="animate-show" ng-show="navctrl.isSelected(1)">
+       <div id="fsdrop" class="container-fluid dropdown1" ng-show="show1"ng-animate="animate-show" ng-show="navctrl.isSelected(1)">
    <div class="container-fluid" style="display:flex;">
    <div style="width:16%">
     <h1 class="linkhead">FACILITIES AND <br>SERVICES</h1>
@@ -79,8 +76,8 @@
     <li class="linkdrop"><a href="">IPR Cell</a></li>
   </ul>
   </div>
-</div>
-<div id="osdrop" class="container-fluid dropdown1 animate-show" ng-show="navctrl.isSelected(2)">
+ </div>
+  <div id="osdrop" class="container-fluid dropdown1 animate-show" ng-show="show2"ng-show="navctrl.isSelected(2)">
    <div class="col-lg-12 col-md-12">
    <div class="borderight col-lg-3 col-md-3">
        <h1 class="linkhead">OUR <br>STARTUPS</h1>
@@ -92,8 +89,8 @@
        <li class="linkdrop col-lg-2 col-md-2"><a href="#">Anchor<br> Companies</a></li>
    </ul>
    </div>
-</div>
-<div id="news" class="container-fluid dropdown1 animate-show" ng-show="navctrl.isSelected(3)">
+  </div>
+  <div id="news" class="container-fluid dropdown1 animate-show" ng-show="show3" ng-show="navctrl.isSelected(3)">
    <div class="col-lg-12 col-md-12">
    <div class="borderight col-lg-2 col-md-2">
        <h1 class="linkhead">NEWS & <br>EVENTS</h1>
@@ -104,10 +101,10 @@
     <li class="linkdrop col-lg-3 col-md-3"><a href="">Newsletter &<br>Press Release</a></li>
    </ul>
    </div>
-</div>
-</div>
+  </div>
+  </div>
 
-</div>
+  </div>
 
 
      <!--
@@ -134,35 +131,39 @@
     -->
           <!--End nav bar-->
 
-<div id="home" class="side-collapse-container"style="background-image: url(images/background3.jpg); background-size:cover;background-repeat:no-repeat;background-position: center;">
+    <div id="home" class="side-collapse-container"style="background-image: url(images/background3.jpg);  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;background-size:cover;background-repeat:no-repeat;background-position: center;">
 
- <div class="container-fluid maintext">
- <div class="logo4">
+  <div class="container-fluid maintext">
+   <div class="logo4">
      <img src="images/logo.png">    
- </div>
-<div class="col-lg-8 col-md-8">
+  </div>
+  <div class="col-lg-8 col-md-8">
     <h1 class="underwhite">We don't create JOBS</h1><br>
     <h1 class="underwhite2">We create OPPORTUNITIES..</h1>
-</div>
-<div class="col-lg-4 col-md-4">
+    </div>
+    <div class="col-lg-4 col-md-4">
     <img class="logo2" src="images/logo2.png">
-</div>
-<br>
-<div class="logo5">
+     </div>
+    <br>
+     <div class="logo5">
   <div class="material" href="#">APPLY NOW</div>
   </div>
-</div>
-</div>
+   </div>
+     </div>
 
 
-<div id="Mainbody" class="side-collapse-container" ng-controller="tbiController as tbictrl">
+    <div id="Mainbody" class="side-collapse-container" style="position: absolute;top:100%"ng-controller="tbiController as tbictrl">
  <div class="sliders">
     <div id="wrap"class="links">
       <li class="menu col-lg-6 col-md-6 col-sm-6 col-xs-6" ng-class="{ 'btn-active' : tbictrl.isSelected(1) }" ng-click="tbictrl.selectTab(1)"><a href="#"data-id="upc">Upcoming Events</a><span><img class="icon"src="images/upc.png"></img></span></li>
       <li class="menu col-lg-6 col-md-6 col-sm-6 col-xs-6" ng-class="{ 'btn-active' : tbictrl.isSelected(2) }" ng-click="tbictrl.selectTab(2)"><a href="#"data-id="news">Latest News</a><span><img class="icon"src="images/events.png"></img></span> </li>
     </div>
     </div>
-    <div class="container2 current" id="upc" ng-show="tbictrl.isSelected(1)">
+    <div class="container2" id="upc" ng-show="tbictrl.isSelected(1)">
        <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -221,7 +222,7 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-</div>
+    </div>
     <div class="container2" id="news" ng-show="tbictrl.isSelected(2)">
        <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -238,7 +239,7 @@
           <img class="col-lg-4 col-md-4 col-sm-12  sliderimage" src="images/sliderimage1.jpg" alt="Chania">
           <div class="col-lg-6 col-md-4 col-sm-12 text">
               <h1>News & Events</h1>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
           </div>
         </div>
@@ -247,7 +248,7 @@
           <img class="col-lg-4 col-md-4 col-sm-12 sliderimage" src="images/sliderimage1.jpg" alt="Chania">
           <div class="col-lg-6 col-md-4 col-sm-12 text">
               <h1>News & Events</h1>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
           </div>
         </div>
@@ -256,7 +257,7 @@
           <img class="col-lg-4 col-md-4 col-sm-12 sliderimage" src="images/sliderimage1.jpg" alt="Flower">
           <div class="col-lg-6 col-md-4 col-sm-12 text">
               <h1>News & Events</h1>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
           </div>
         </div>
@@ -265,7 +266,7 @@
           <img class="col-lg-4 col-md-4 col-sm-12 sliderimage" src="images/sliderimage1.jpg" alt="Flower">
           <div class="col-lg-6 col-md-4 col-sm-12 text">
               <h1>News & Events</h1>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
           </div>
         </div>
@@ -281,26 +282,28 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-</div>
-</div>
-<div class="footer container-fluid side-collapse-container">
-<div class="col-lg-8">
+    </div>
+    </div>
+</body>
+</html>
+<!--<footer class="footer container-fluid side-collapse-container" >
+    <div class="col-lg-8">
 
     
 </div>
  <div class="contact col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
-  <h3 class="foot">Address</h3>
+  <h3>Address</h3>
   <p>VIT - Technology Business Incubator,
 Vellore Institute of Technology,
 Vellore – 632 014, Tamil Nadu, India. 
 Tel. +91 416 224 3097
 Email: vittbi@vit.ac.in, vittbi@yahoo.co.in </p>
 </div>
- 
-</div>
 <div class="borderdown col-lg-12 col-md-12 col-sm-12 col-xs-12 side-collapse-container">
     <h3>© 2014 Copyright Vellore Institute Of Technology. All rights reserved.</h3>
-</div>
+</div> 
+</footer>-->
+
 <script>
     smoothScroll.init();
    
@@ -309,5 +312,3 @@ Email: vittbi@vit.ac.in, vittbi@yahoo.co.in </p>
 
 
 
-</body>
-</html>

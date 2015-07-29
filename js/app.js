@@ -24,5 +24,11 @@
 			return this.tab === checkTab;
 		};
 	});
+	app.controller('MainCtrl', function($scope) {
+	  $scope.show1 = false;
+	  $scope.show2 = false;
+	  $scope.show3 = false;
+	});
+
 
 })();
