@@ -173,20 +173,8 @@ inner>.item>img {
 .myClass{
 	background-color: #171717;
 }
-.fade.ng-hide {
-  transition:0.5s linear all;
-  opacity:0;
-}
 
-.animate-show {
-  -moz-transition:all linear 1s;
-  -o-transition:all linear 1s;
-  transition:all linear 1s;
-  display:block!important;
-  -webkit-transition:all linear 1s;
-  transition:all linear 1s;
-  opacity:1;
-}
+
 
 
 .links1 a{
@@ -498,6 +486,9 @@ a:visited{
 		margin-left: 74px;
 	}
 
+}
+.contact p{
+	color: #e0e0e0;
 }
 
 .logo2 {
