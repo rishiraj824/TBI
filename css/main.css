@@ -14,24 +14,17 @@
 #slidernavbar{
 display: none;
 }
-.fade.ng-enter {
-  transition:0.5s linear all;
-  opacity:0;
-}
 
-/* The finishing CSS styles for the enter animation */
-.fade.ng-enter.ng-enter-active {
-  opacity:1;
+.show-hide.ng-animate{
+	display: block !important;
+	transition : 5s all linear;
 }
-.fade.ng-leave {
-  transition:0.5s linear all;
-  opacity:1;
+.show-hide{
+	opacity: 1;
 }
-.fade.ng-leave.ng-leave-active {
-  opacity:0;
+.show-hide.ng-hide{
+	opacity: 0;
 }
-
-
 
 .text h1{
 	font-family: Roboto;
@@ -387,6 +380,9 @@ a:visited{
     right: 0;
 
 }
+
+
+
 
 @media only screen and (max-width: 1268px){
 	.logo4{
