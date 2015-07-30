@@ -321,6 +321,10 @@ a:visited{
              left:0;
              transition:left .4s;
          }
+         .sliderimage{
+         	padding: 0 !important;
+         	margin: 0 !important;
+         }
          .icon{
          	margin-left: 4px !important;
          }
