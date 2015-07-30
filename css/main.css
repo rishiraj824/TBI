@@ -195,7 +195,7 @@ padding-bottom: 1px;
 background-color: none;
 }
 .links1{
-font-family: Roboto medium;
+font-family: Roboto;
 font-size: 18px;
 text-decoration: none;
 color: white;
@@ -226,7 +226,7 @@ padding-bottom: 1px;
 background-color: none;}
 .links{
 width: 100%;
-font-family: Roboto medium;
+font-family: Roboto;
 font-size: 22px;
 text-decoration: none !important;
 color: white;
@@ -408,12 +408,12 @@ a:visited{
 	}
 }
 
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:1200px){
     .underwhite {
 		  margin-left: 0px !important;
 		  font-size: 34px !important;
 		  font-weight: 100 !important;
-		  font-family: "Roboto thin";
+		  font-family: "Roboto";
 		  color: white;
 		  text-align: center !important;
 		}
@@ -455,23 +455,7 @@ a:visited{
     
 }
 @media only screen and (max-width: 1268px)  {
-	.underwhite {
-		  margin-left: 0px !important;
-		  font-size: 34px !important;
-		  font-weight: 100 !important;
-		  font-family: "Roboto thin";
-		  color: white;
-		  text-align: center !important;
-		}
-		
-	.underwhite2 {
-		margin-left: 0px !important;
-	  font-size: 36px !important;
-	  font-weight: bold !important;
-	  font-family: "Roboto";
-	  color: white;
-	  text-align: center !important;
-	}
+	
 	
 	.logo3{
 		display: block;
@@ -535,21 +519,7 @@ pre {
 		display: none;
 	}
 	
-	.underwhite {
-		  font-size: 54px !important;
-		  font-weight: 100 !important;
-		  font-family: "Roboto thin";
-		  color: white;
-		  text-align: center !important;
-		  margin-left: 
-		}
-	.underwhite2 {
-	  font-size: 64px !important;
-	  font-weight: bold !important;
-	  font-family: "Roboto";
-	  color: white;
-	  text-align: center !important;
-	}
+	
 	
 	
 	.container-fluid {
@@ -600,12 +570,12 @@ pre {
 	border:2px solid #5d83ff;
 	font-size: 38px;
 	}*/
-
+@media screen and (min-width: 1200px){
 	.underwhite {
 	  display: inline;
-	  font-size: 64px;
+	  font-size: 54px;
 	  font-weight: 100;
-	  font-family: "Roboto thin";
+	  font-family: "Roboto";
 	  color: white;
 	}
 .underwhite2 {
@@ -615,7 +585,10 @@ pre {
   font-family: "Roboto";
   color: white;
 }
-
+.logo4{
+	display: none;
+}
+}
 .link_menu a:hover {
 	color: white !important;
 	text-decoration: none !important;
