@@ -1,0 +1,210 @@
+<!doctype html>
+<html ng-app="tbi">
+<head>
+  <meta charset="utf-8">
+  <title>CSR Partnership | VIT-TBI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../../css/main.css">
+  <link rel="stylesheet" type="text/css" href="csr.css">
+  <script src="../../js/jquery.js"></script>
+  <script src="../../js/tbi.js"></script>
+  <script src="../../js/smooth-scroll.js"></script>
+  <script type="text/javascript" src="../../js/angular.min.js"></script>
+  <script type="text/javascript" src="../../js/angular-animate.min.js"></script>
+    <script type="text/javascript" src="../../js/app.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {   
+                var sideslider = $('[data-toggle=collapse-side]');
+                var sel = sideslider.attr('data-target');
+                var sel2 = sideslider.attr('data-target-2');
+                sideslider.click(function(event){
+                    $(sel).toggleClass('in');
+                    $(sel2).toggleClass('out');
+                });
+            });
+    
+    </script>
+ 
+    <link rel="stylesheet" href="../../bootstrap-3.3.5-dist/css/bootstrap.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+   
+</head>
+<body>
+<!--Main Nav-->
+   <div id="mainnavbar" ng-controller="navController as navctrl">
+   <div role="banner" class="navbar navbar-fixed-top navbar-inverse" class="container-fluid nav ">
+       <div class="navbar-header">
+         <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><h1 class="logo3"style="color:white;font-size:20px;font-family:Roboto;text-align:start;">Menu</h1>
+       </div>
+       <div class="navbar-inverse side-collapse in">
+         <nav role="navigation" class="navbar-collapse">
+           <ul class="nav navbar-nav">
+             <li style="width: 14.66666667%;"><img class="logo" src="../../images/logo.png"></li>
+             <li  class="links1" ng-click="navctrl.selectTab(0) "><a  style="position: relative;padding-top: 50px;"href="#home">Home</a></li>
+             <li  class="links1" ng-click="navctrl.selectTab(0)"><a  style="position: relative;padding-top: 50px;"href="#about_tbi">About</a></li>
+             <li  class="links1" ng-click="navctrl.selectTab(1)"><a  style="position: relative;padding-top: 50px;"href="#services">Facilities & Services<span class="caret"></span></a></li>
+             <li  class="links1" ng-click="navctrl.selectTab(2) "><a  style="position: relative;padding-top: 50px;"href="#">Our Startups<span class="caret"></span></a></li>
+             <li  class="links1" ng-click="navctrl.selectTab(3) "><a  style="position: relative;padding-top: 50px;"href="#">News & Events<span class="caret"></span></a></li>
+             <li  class="links1" ng-click="navctrl.selectTab(0)"><a  style="position: relative;padding-top: 50px;"href="csrpartnership.html">CSR Partenership</a></li>
+             <li  class="links1" ng-click="navctrl.selectTab(0)"><a  style="position: relative;padding-top: 50px;"href="#">Past Events</a></li>
+           </ul>
+         </nav>
+       </div>
+       <div id="fsdrop"  class="container-fluid dropdown1 show-hide" ng-show="navctrl.isSelected(1)">
+   <div class="container-fluid" style="display:flex;">
+   <div style="width:16%">
+    <h1 class="linkhead">FACILITIES AND <br>SERVICES</h1>
+  </div>
+  <div class="col-lg-1 col-md-1 " style="width:2%"><img style="margin-top:-21px"src="../../images/line.png"></div>
+  <ul class="menu2" style="width:90%;display: flex;">
+    <li class="linkdrop"><a href="">Infrastructure</a></li>
+    <li class="linkdrop"><a href="">Access<br>to Funding</a></li>
+    <li class="linkdrop"><a href="">Soft Landing<br> Support</a></li>
+    <li class="linkdrop"><a href="">Training &<br> Development</a></li>
+    <li class="linkdrop"><a href="">Projects &<br> Partnership</a></li>
+    <li class="linkdrop"><a href="">Monitoring</a></li>
+    <li class="linkdrop"><a href="">IPR Cell</a></li>
+  </ul>
+  </div>
+ </div>
+  <div id="osdrop" ng-animate=" 'animate' " class="container-fluid dropdown1 animate-show"  ng-show="navctrl.isSelected(2)">
+   <div class="col-lg-12 col-md-12">
+   <div class="borderight col-lg-3 col-md-3">
+       <h1 class="linkhead">OUR <br>STARTUPS</h1>
+   </div>
+   <div class="col-lg-1 col-md-1"><img style="margin-top:-21px"src="../images/line.png"></div>
+   <ul>
+       <li class="linkdrop col-lg-2 col-md-2"><a href="#">Projects<br>Under Incubation</a></li>
+       <li class="linkdrop col-lg-2 col-md-2"><a href="#">Graduated<br> Companies</a></li>
+       <li class="linkdrop col-lg-2 col-md-2"><a href="#">Anchor<br> Companies</a></li>
+   </ul>
+   </div>
+  </div>
+  <div id="news" class="container-fluid dropdown1 animate-show"  ng-show="navctrl.isSelected(3)">
+   <div class="col-lg-12 col-md-12">
+   <div class="borderight col-lg-2 col-md-2">
+       <h1 class="linkhead">NEWS & <br>EVENTS</h1>
+   </div>
+   <div class="col-lg-1 col-md-1"><img style="margin-top:-21px"src="../images/line.png"></div>
+   <ul>
+       <li class="linkdrop col-lg-3 col-md-3"><a href="">Promotional<br>Events</a></li>
+    <li class="linkdrop col-lg-3 col-md-3"><a href="">Newsletter &<br>Press Release</a></li>
+   </ul>
+   </div>
+  </div>
+  </div>
+
+  </div>
+  <!--mobile nav-->
+  <header role="banner" id="slidernavbar" class="navbar navbar-fixed-top navbar-inverse" class="container-fluid nav ">
+      <div class="navbar-header">
+        <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><h1 class="logo3"style="color:white;font-size:20px;font-family:Roboto;text-align:start;">Menu</h1>
+      </div>
+      <div class="navbar-inverse side-collapse in">
+        <nav role="navigation" class="navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="links2"><a href="../../index.html">Home</a></li>
+            <li class="links2"><a href="#about_tbi">About</a></li>
+            <li class="dropdown links2">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Facilities & Services<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Infrastructure</a></li>
+              <li><a href="#">Access<br>to Funding</a></li>
+              <li><a href="#">Soft Landing<br> Support</a></li>
+              <li><a href="#">Training &<br> Development</a></li>
+              <li><a href="#">Projects &<br> Partnership</a></li>
+              <li><a href="#">Monitoring</a></li>
+              <li><a href="#">IPR Cell</a></li>
+            </ul>
+          </li>
+              <li class="dropdown links2">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Startups<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Projects<br>Under Incubation</a></li>
+                <li><a href="#">Graduated<br> Companies</a></li>
+                <li><a href="#">Anchor<br> Companies</a></li>
+              </ul>
+            </li>
+              <li class="dropdown links2">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">News & Events<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Promotional<br>Events</a></li>
+                <li><a href="#">Newsletter &<br>Press Release</a></li>
+              </ul>
+            </li>
+            <li class="links2"><a href="csrpartnership.html">CSR Partenership</a></li>
+            <li class="links2"><a href="#">Past Events</a></li>
+          </ul>
+        </nav>
+      </div>
+      </header>
+      <body>
+      <div class="text col-lg-12 col-md-12 col-xs-12 col-sm-12">
+      <h1>CSR PARTNERSHIP</h1>
+      <p>
+      As per Section 135 of the Companies Act 2013, large companies are expected to spend 2% of the average net profits towards Corporate Social Responsibility Projects. 
+
+VIT Technology Business Incubator is a non-profit technology business incubator located within an academic organization which is approved by the Central Government and hence eligible under Section 135, Schedule 7 of the Companies Act 2013. Please visit the link http://www.mca.gov.in/Ministry/pdf/CompaniesActNotification3_2014.pdf , see item (ix) under Schedule VII for details. This proposal will allow companies to invest up to 2% of its net profits in VITTBI and account for it as CSR expenditure. 
+
+VIT Technology Business Incubator is eligible to receive funding support under Section 135, Schedule 7 of the Companies Act 2013 because:
+
+VITTBI is a non-profit entity; it is registered as a Section 25 company
+VITTBI was incorporated in 2003 and has a good track record supporting innovative technology startups.
+VITTBI is a technology business incubator approved by the Department of Science. (Ministry of S&T, Govt of India)
+VITTBI has been supported by funding from DST-NSTEDB, TIFAC, TDB, DSIR, BIRAC and DC/MSME (all Government of India agencies).
+Sector under Schedule VII encompasses Technology incubators located within academic institutions which are approved by the Central Government [item 1(ix) in GSR 130(E)] to support one or more of the below-mentioned types of projects.
+Core activity of VITTBI to promote entrepreneurship and incubate startup ventures
+Entrepreneurship Lecture series to inspire, inform and energize a new generation of technology innovators and aspiring entrepreneurs in the campus and the region.
+Fellowships to encourage more people to come up with new technology ideas and take risk in its development.
+Structured programs to support innovative business ventures
+Create a common facility for engineering innovators to experiment and test various ideas that may lead to cutting-edge technologies benefiting the society.
+CSR funding can be of two types as per CSR rules (clause 7).
+Contribution to the corpus: In this form of contribution, the company can fund a lasting and continuing program with potential for long lasting impact. This form of funding is suitable for creating/ supporting resource centers and organizational activity/initiatives. Here, the recipient only uses the income on the corpus towards its activities; the corpus remains an asset of the organization.
+Project or program funding: In this form of contribution, the company can focus on focused, limited term projects with clear milestones.
+VITTBI shall provide periodic reports on the following aspects to help the Corporate meet its annual reporting requirements under CSR rules.
+Activities undertaken
+Utilization of funds/ financial report against planned budget
+Impact of activities undertaken against pre-decided impact metrics
+For more details and engagement, please contact: </p>
+<div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
+<h3>The General Manager :-</h3>
+<p >
+VIT-Technology Business Incubator ,<br> 
+VIT University, Vellore – 632 014, Tamil Nadu, India. <br>
+Tel. +91 416 224 3097 (Direct) <br>
+DID 2202301 / 2202302. <br>
+Fax No: +91 416 2243 097 and +91 416 224 0411<br>
+Mobile No: 9443311367<br>
+Email: vittbi@vit.ac.in , vittbi@yahoo.co.in <br>
+Website :www.vit.ac.in/tbi , www.vittbi.com<br>
+</p>
+</div>
+
+</div>
+<footer class="footer">
+   <div class="row">
+    <div class="col-lg-8">
+
+    
+</div>
+ <div class="contact col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
+  <h3>Address</h3>
+  <p>VIT - Technology Business Incubator,
+Vellore Institute of Technology,
+Vellore – 632 014, Tamil Nadu, India. 
+Tel. +91 416 224 3097
+Email: vittbi@vit.ac.in, vittbi@yahoo.co.in </p>
+</div>
+</div>
+<div class="row">
+<div class="borderdown col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <h4>© 2014 Copyright Vellore Institute Of Technology. All rights reserved.</h4>
+</div>
+</div> 
+</footer>
+      
+      </body>
+      </html>

@@ -1,0 +1,43 @@
+html,body{
+	background-color: #212121 !important;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	position: relative;
+}
+.text{
+    margin-top:140px;
+	padding:20px;
+}
+.text p{
+	font-size:18px;
+	font-family:Roboto;
+	font-weight: 100;
+	color:white;
+}
+.text h1{
+	font-size:30px;
+	font-weight:bold;
+	font-family:Roboto;
+	color:#e6882c;
+}
+.text h3{
+	font-size:28px;
+	font-weight:bold;
+	color:white;
+	font-family:Roboto;
+}
+@media screen only and (max-width: 1200px){
+	.text{
+		margin-top: 40px;
+	}
+	.text p{
+		font-size: 1em;
+	}
+	.text h1{
+		font-size:1.6em;
+	}
+	.text h3{
+		font-size: 1em;
+	}
+}

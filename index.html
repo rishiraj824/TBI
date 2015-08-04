@@ -4,9 +4,6 @@
   <meta charset="utf-8">
   <title>VIT-TBI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/Roboto-Medium.ttf">
-  <link rel="stylesheet" type="text/css" href="css/Roboto-Bold.ttf">
-  <link rel="stylesheet" type="text/css" href="css/Roboto-Regular.ttf">
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <script src="js/jquery.js"></script>
@@ -14,6 +11,7 @@
   <script src="js/smooth-scroll.js"></script>
   <script type="text/javascript" src="js/angular.min.js"></script>
   <script type="text/javascript" src="js/angular-animate.min.js"></script>
+  <script type="text/javascript" src="js/angularuirouter.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {   
@@ -46,12 +44,12 @@
            <ul class="nav navbar-nav">
              <li style="width: 14.66666667%;"><img class="logo" src="images/logo.png"></li>
              <li  class="links1" ng-click="navctrl.selectTab(0) "><a  style="position: relative;padding-top: 50px;"href="#home">Home</a></li>
-             <li  class="links1" ng-click="navctrl.selectTab(0)"><a  style="position: relative;padding-top: 50px;"href="#about_tbi">About</a></li>
-             <li  class="links1" ng-click="navctrl.selectTab(1)"><a  style="position: relative;padding-top: 50px;"href="#services">Facilities & Services<span class="caret"></span></a></li>
-             <li  class="links1" ng-click="navctrl.selectTab(2) "><a  style="position: relative;padding-top: 50px;"href="#">Our Startups<span class="caret"></span></a></li>
-             <li  class="links1" ng-click="navctrl.selectTab(3) "><a  style="position: relative;padding-top: 50px;"href="#">News & Events<span class="caret"></span></a></li>
-             <li  class="links1" ng-click="navctrl.selectTab(0)"><a  style="position: relative;padding-top: 50px;"href="#">CSR Partenership</a></li>
-             <li  class="links1" ng-click="navctrl.selectTab(0)"><a  style="position: relative;padding-top: 50px;"href="#">Past Events</a></li>
+             <li  class="links1" ng-click="navctrl.selectTab(0)"><a  style="position: relative;padding-top: 50px;"href="views/About/about.html">About</a></li>
+             <li  class="links1" ng-click="navctrl.selectTab(1)"><a  style="position: relative;padding-top: 50px;"href="views/Facilities-and-Services/infrastructure.html">Facilities & Services<span class="caret"></span></a></li>
+             <li  class="links1" ng-click="navctrl.selectTab(2) "><a  style="position: relative;padding-top: 50px;"href="views/Our-Startups/pui.html">Our Startups<span class="caret"></span></a></li>
+             <li  class="links1" ng-click="navctrl.selectTab(3) "><a  style="position: relative;padding-top: 50px;"href="views/News-and-Events/events.html">News & Events<span class="caret"></span></a></li>
+             <li  class="links1" ng-click="navctrl.selectTab(0)"><a  style="position: relative;padding-top: 50px;"href="views/CSR-Partnership/csrpartnership.html">CSR Partenership</a></li>
+             <li  class="links1" ng-click="navctrl.selectTab(0)"><a  style="position: relative;padding-top: 50px;"href="views/Past-Events/pastevents.html">Past Events</a></li>
            </ul>
          </nav>
        </div>
@@ -108,10 +106,10 @@
       <div class="navbar-inverse side-collapse in">
         <nav role="navigation" class="navbar-collapse">
           <ul class="navbar-nav">
-            <li class="links2"><a href="#home">Home</a></li>
-            <li class="links2"><a href="#about_tbi">About</a></li>
+            <li class="links2"><a href="index.html">Home</a></li>
+            <li class="links2"><a href="views/About/about.html">About</a></li>
             <li class="dropdown links2">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Facilities & Services<b class="caret"></b></a>
+            <a href="views/Facilities-and-Services/infrastructure.html" class="dropdown-toggle" data-toggle="dropdown">Facilities & Services<b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="#">Infrastructure</a></li>
               <li><a href="#">Access<br>to Funding</a></li>
@@ -123,7 +121,7 @@
             </ul>
           </li>
               <li class="dropdown links2">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Startups<b class="caret"></b></a>
+              <a href="views/Our-Startups/pui.html" class="dropdown-toggle" data-toggle="dropdown">Our Startups<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Projects<br>Under Incubation</a></li>
                 <li><a href="#">Graduated<br> Companies</a></li>
@@ -137,7 +135,7 @@
                 <li><a href="#">Newsletter &<br>Press Release</a></li>
               </ul>
             </li>
-            <li class="links2"><a href="#">CSR Partenership</a></li>
+            <li class="links2"><a href="views/CSR-Partnership/csrpartnership.html">CSR Partenership</a></li>
             <li class="links2"><a href="#">Past Events</a></li>
           </ul>
         </nav>
@@ -310,7 +308,7 @@
     </div>
     </div>
     </div>
-    <footer class="footer" >
+<footer class="footer" >
    <div class="row">
     <div class="col-lg-8">
 
@@ -318,29 +316,29 @@
 </div>
  <div class="contact col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
   <h3>Address</h3>
-  <p>VIT - Technology Business Incubator,
-Vellore Institute of Technology,
-Vellore – 632 014, Tamil Nadu, India. 
-Tel. +91 416 224 3097
+  <p>VIT - Technology Business Incubator,<br>
+Vellore Institute of Technology,<br>
+Vellore – 632 014, Tamil Nadu, India.<br> 
+Tel. +91 416 224 3097<br>
 Email: vittbi@vit.ac.in, vittbi@yahoo.co.in </p>
 </div>
 </div>
 <div class="row">
 <div class="borderdown col-lg-12 col-md-12 col-sm-12 col-xs-12">
-    <h3>© 2014 Copyright Vellore Institute Of Technology. All rights reserved.</h3>
+    <h4>© 2014 Copyright Vellore Institute Of Technology. All rights reserved.</h4>
 </div>
 </div> 
 </footer>
     </div>
+<script>
+    smoothScroll.init();
+   
+</script>
 
 </body>
 </html>
 
 
-<script>
-    smoothScroll.init();
-   
-</script>
 
 
 
