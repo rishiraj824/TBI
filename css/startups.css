@@ -31,7 +31,7 @@ fa-ellipsis-h:before {
 }
 
 .card .card-content {
-	background-color: white;
+    background-color: white;
     padding: 10px;    
 }
 
@@ -41,7 +41,7 @@ fa-ellipsis-h:before {
 }
 
 .card .card-action{
-	background-color: white;
+    background-color: white;
     padding: 20px;
     border-top: 1px solid rgba(160, 160, 160, 0.2);
 }
@@ -83,12 +83,13 @@ fa-ellipsis-h:before {
 .btn-custom{
     background-color: transparent;
     font-size:18px;
+        border: 0px outset buttonface !important;
 }
 .puiheads{
     background-color: white;
     padding: 5px;
-    margin: 8px;
     cursor: pointer;
+    text-align: center;
 }
 .puiheads h1{
     padding: 4px;

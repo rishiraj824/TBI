@@ -1,0 +1,82 @@
+.panel1{
+	background-color: white;
+	padding: 18px;
+	min-height: 140px;
+	margin-top: 120px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+.borderright{
+	border-right: solid 4px #ddd;
+}
+.panel1 a{
+	color: black;
+	font-size: 42px;
+	font-family: Roboto;
+	font-weight: 700;
+}
+@media screen and (max-width: 768px){
+	.panel1 a{
+		font-size: 1.8em !important;
+		font-weight: 400;
+	}
+	.panelmainmenu{
+		font-size: 0.7em !important ;
+	}
+	.panelmenu{
+		font-size: 0.5em !important ;
+	}
+	.panellist{
+		font-size:0.5em !important;
+	}
+	.arrow-img{
+		width: 20px;
+		height: 20px;
+	}
+	 
+}
+@media screen and (min-width: 768px)and (max-width: 1268px){
+	.panel1 h1{
+		font-size: 1.4em !important;
+	}
+	.panelmainmenu{
+		font-size: 1.1em !important ;
+	}
+	.panelmenu{
+		font-size: 1.2em !important ;
+	}
+	.panellist{
+		font-size:1em !important;
+	}
+	 
+}
+.panelmainmenu{
+	cursor: pointer;
+	font-family: Roboto;
+	font-size: 28px;
+	color: black;
+	font-weight: 500;
+}
+.panelmenu{
+	cursor: pointer !important;
+	font-family: Roboto;
+	font-size: 20px;
+	color: black;
+	font-weight: 400;
+}
+.panellist{
+	margin-left:80px; 
+	font-weight: 300;
+	font-size: 16px;
+	color: black;
+	font-family: Roboto;
+}
+.rotate {
+    transform: rotate(90deg);
+    /*transform: rotate(180deg);*/
+    transition: .3s;
+}
+.rotate2 {
+    transform: rotate(0deg);
+    transition: .3s;
+}

@@ -10,9 +10,9 @@ html,body{
 	padding:0px;
 }
 .textcsr p{
-	font-size:12px;
+	font-size:18px;
 	font-family:Roboto;
-	font-weight: 100;
+	font-weight: 300;
 	color:white;
 }
 .textcsr h1{
@@ -27,7 +27,7 @@ html,body{
 	color:white;
 	font-family:Roboto;
 }
-@media screen only and (max-width: 1200px){
+@media screen only and (max-width: 1268px){
 	.textcsr{
 		margin-top: 0px !important;
 	}

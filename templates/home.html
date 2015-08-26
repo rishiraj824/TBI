@@ -1,0 +1,242 @@
+<script src="../js/jquery.js"></script>
+<script src="../bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.carousel').carousel();
+    });
+</script>
+<div id="home" class="side-collapse-container">
+<div class="row">
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+ 
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1"></li>
+    <li data-target="#bs-carousel" data-slide-to="2"></li>
+  </ol>
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+     <!-- Overlay -->
+  <div class="overlay"></div>
+      <div class="slide-1"></div>
+      <div class="hero">
+        <hgroup>
+            <h1 style="color:yellow;">YOU INNOVATE!!<br>WE INCUBATE!!</h1>        
+            
+      </div>
+    </div>
+    <div class="item slides">
+    <!-- Overlay -->
+     <div class="overlay"></div>
+      <div class="slide-2"></div>
+       <div class="hero">        
+        <hgroup>
+            <h2 style="color:#e6882c">Top-Notch Facilities.</h2>        
+            <p>Lorem ipsum dolor sit amet, consectetur adscing elit. Mauris ac mauris auctor lorem si.</p>
+        </hgroup>       
+        <button class="btn btn-hero btn-lg" role="button">Learn More</button>
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="overlay"></div>
+      <div class="slide-3"></div>
+      <div class="hero">        
+        <hgroup>
+            <h1 style="color:#e6882c">Apply Now!</h1>     
+      </div>
+    </div>
+  </div> 
+</div>
+</div>
+</div>
+<div class="container">
+  <div class="about col-lg-12 col-md-12">
+    <h1 style="font-weight:700;font-size:25px;">About VIT-TBI</h1>
+    <p style="font-weight:300;font-size:16px;">VIT TBI (Technology Business Incubator) has been established at Vellore Institute 
+of Technology with the Sponsorship of the Department of Science and Technology,
+Government  of India to assist budding entrepreneurs like you to incubate your 
+technology venture.</p>
+ </div>
+    </div>
+  
+     <div class="container">
+    <div class="description row ">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="grey-box">
+            <h2 style="color:white; font-family:Roboto;font-weight:500;font-size:28px;">Startups Under Incubation</h2>
+            <p style="color:white; font-family:Roboto;font-weight:300;font-size:18px;">Lorem ipsum dolor sit amet, consectetur adscing elit. Mauris ac mauris auctor lorem si.</p>
+            <img src="../images/rocket.png" style="position:absolute;bottom:0;right:0;">
+            <a style="font-family:Roboto;font-weight:400;color:white;font-size:18px;left:10px;bottom:8px;position:absolute" href="#">Learn More</a>
+          </div>
+          </div>
+           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+           <div class="grey-box">
+            <h2 style="color:white; font-family:Roboto;font-weight:500;font-size:28px;">Graduated Startups</h2>
+            <p style="color:white; font-family:Roboto;font-weight:300;font-size:18px;">Lorem ipsum dolor sit amet, consectetur adscing elit. Mauris ac mauris auctor lorem si.</p>
+            <img src="../images/persona.png" style="position:absolute;bottom:0;right:0;">
+            <a style="font-family:Roboto;font-weight:400;color:white;font-size:18px;left:10px;bottom:8px;position:absolute" href="#">Learn More</a>
+            </div>
+          </div>
+           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+           <div class="orange-box">
+            <h2 style="color:white; font-family:Roboto;font-weight:500;font-size:28px;">Something Else</h2>
+            <p style="color:white; font-family:Roboto;font-weight:300;font-size:18px;">Lorem ipsum dolor sit amet, consectetur adscing elit. Mauris ac mauris auctor lorem si.</p>
+            <img src="../images/folks.png" style="position:absolute;bottom:0;right:0;">
+            <a style="font-family:Roboto;font-weight:400;color:white;font-size:18px;left:10px;bottom:8px;position:absolute" href="#">Learn More</a>
+            </div>
+          </div>
+            
+          </div>
+      </div>
+
+    <div id="Mainbody" class="side-collapse-container" ng-controller="tbiController as tbictrl">
+ <div class="sliders">
+    <div id="wrap" class="links">
+      <li class="menu col-lg-6 col-md-6 col-sm-6 col-xs-6" ng-class="{ 'btn-active' : tbictrl.isSelected(1) }" ng-click="tbictrl.selectTab(1)"><a href="#"data-id="upc">Upcoming Events</a>
+      <span><img class="icon"src="images/upc.png"></span></li>
+      <li class="menu col-lg-6 col-md-6 col-sm-6 col-xs-6" ng-class="{ 'btn-active' : tbictrl.isSelected(2) }" ng-click="tbictrl.selectTab(2)"><a href="#"data-id="news">Latest News</a>
+      <span><img class="icon"src="images/events.png"></span> </li>
+    </div>
+    </div>
+    <div class="container2" id="upc" ng-show="tbictrl.isSelected(1)">
+       <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item container active">
+        <div class="row">
+          <img class="col-lg-4 col-md-4 col-sm-6 col-xs-6 sliderimage" src="images/sliderimage1.jpg" alt="Chania">
+          <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6 text">
+              <h1>Event Name</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
+          </div>
+        </div>
+       </div>
+        <div class="item container">
+        <div class="row">
+          <img class="col-lg-4 col-md-4 col-sm-6  col-xs-6 sliderimage" src="images/sliderimage1.jpg" alt="Chania">
+          <div class="col-lg-8 col-md-8 col-sm-6  col-xs-6 text">
+              <h1>Event Name</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
+          </div>
+          </div>
+         
+        </div>
+
+        <div class="item container">
+        <div class="row">
+          <img class="col-lg-4 col-md-4 col-sm-6  col-xs-6 sliderimage" src="images/sliderimage1.jpg" alt="Flower">
+          <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6 text">
+              <h1>Event Name</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
+          </div>
+          </div>
+        </div>
+
+         <div class="item container">
+        <div class="row">
+          <img class="col-lg-4 col-md-4 col-sm-6 col-xs-6 sliderimage" src="images/sliderimage1.jpg" alt="Flower">
+          <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6 text">
+              <h1>Event Name</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
+          </div>
+          </div>
+        </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    </div>
+    </div>
+    <div class="container2" id="news" ng-show="tbictrl.isSelected(2)">
+       <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item container active">
+        <div class="row">
+          <img class="col-lg-4 col-md-4 col-sm-6 col-xs-6 sliderimage" src="images/sliderimage1.jpg" alt="Chania">
+          <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6 text">
+              <h1>News & Buzz</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
+          </div>
+        </div>
+       </div>
+        <div class="item container">
+        <div class="row">
+          <img class="col-lg-4 col-md-4 col-sm-6  col-xs-6 sliderimage" src="images/sliderimage1.jpg" alt="Chania">
+          <div class="col-lg-8 col-md-8 col-sm-6  col-xs-6 text">
+              <h1>News & Buzz</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
+          </div>
+          </div>
+         
+        </div>
+
+        <div class="item container">
+        <div class="row">
+          <img class="col-lg-4 col-md-4 col-sm-6  col-xs-6 sliderimage" src="images/sliderimage1.jpg" alt="Flower">
+          <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6 text">
+              <h1>News & Buzz</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
+          </div>
+          </div>
+        </div>
+
+         <div class="item container">
+        <div class="row">
+          <img class="col-lg-4 col-md-4 col-sm-6 col-xs-6 sliderimage" src="images/sliderimage1.jpg" alt="Flower">
+          <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6 text">
+              <h1>News & Buzz</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
+          </div>
+          </div>
+        </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    </div>
+    </div>
+    </div>
+

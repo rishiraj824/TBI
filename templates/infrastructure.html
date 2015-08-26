@@ -1,0 +1,42 @@
+<script type="text/javascript">
+$(function () {
+
+	// body...
+	$('.arrow-img').on('click',function(){
+    $(this).toggleClass('rotate');
+	$(this).toggleClass('rotate2');
+});
+});
+
+
+</script>
+<div class="container panel1 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<a href="">Infrastructure Access</a>
+</div>
+
+<div class="container">
+<div class="panel panel-default" ng-controller="panelController as panelctrl">
+  <!-- Default panel contents -->
+  <div class="row">
+  <div class="arrow panel-heading col-lg-6 col-md-6 col-sm-6 col-xs-6 panelmainmenu">Product Innovation Center</div>
+  </div>
+  <!-- List group -->          
+            
+   <div id="menu"  >
+   <div class="panel list-group">
+   <div href="#" class="list-group-item panelmenu arrow"   data-arrowID="5" data-parent="#menu"><span><a style="margin-right:5px; " ><img class="arrow-img rotate2" src="../images/Arrow2.png"/></a></span>Rapid Prototyping</div>
+    <div class="list-group-item panelmenu arrow" role="button" data-toggle="collapse" href="#sm1" aria-expanded="false" data-target="#sm1" aria-controls="sm1"><span><a style="margin-right:5px; "><img class="arrow-img rotate2" src="../images/Arrow2.png"/></a></span>Analytical Instrumentaion</div>
+     <div id="sm1" class="sublinks collapse">
+     <a href="" class="panellist list-group-item medium"> Gas Chromatograph</a>
+     <a href="" class="panellist list-group-item medium"> HPLC</a>
+     <a href="" class="panellist list-group-item medium"> Atomic Absorption Spectrophotmeter</a>
+     <a href="" class="panellist list-group-item medium"> UV-Vi's</a>              
+    </div>   
+    <div href="#" class="list-group-item panelmenu arrow"  class="arrow" data-arrowID = "6" data-parent="#menu"><span><a style="margin-right:5px; " ><img class="arrow-img rotate2" src="../images/Arrow2.png"/></a></span>Office Space</div>
+   </div>
+   </div>
+   </div>
+   </div>
+   
+      
+            

@@ -11,6 +11,22 @@
 	display: flex;
 
 }
+.description{
+	background-color: #212121;
+	padding: 10px;
+}
+.about{
+	background-color: #212121;
+
+}
+.about h1{
+	font-family: Roboto;
+	color: white;
+}
+.about p{
+	font-family: Roboto;
+	color: white;
+}
 #slidernavbar{
 display: none;
 }
@@ -62,27 +78,28 @@ display: none;
 }
 .linkdrop{
 	width: 17%;
-	font-size: 24px;
+	font-size: 20px;
 	font-family: Roboto;
-	font-weight: 200;
+	font-weight: 400;
 	color: black !important;
 	list-style-type: none;
     margin-top: 28px;
 }
 .linkdrop a{
 	margin-top: 12px;
-	font-size: 24px;
+	font-size: 20px;
 	font-family: Roboto;
-	font-weight: 200;
+	font-weight: 400;
 	color: black !important;
 	list-style-type: none;
 }
 .linkdrop a:link{
 	color: black;
 	margin-top: 12px;
-	font-size: 24px;
+	font-size: 20px;
 	font-family: Roboto;
-	font-weight: 200;
+	font-weight: 400;
+	transition:all linear 0.2s;
 	color: black !important;
 	list-style-type: none;
 }
@@ -97,7 +114,7 @@ display: none;
 }
 .linkdrop a:active{
 	text-decoration: none;
-	color: #e6882c;
+	color: #e6882c !important;
 
 }
 
@@ -115,10 +132,18 @@ display: none;
 }
 .text p{
 	font-family: Roboto;
-	font-size: 24px;
+	font-size: 18px;
+	font-weight: 300;
 }
 .btn-active{
 	background-color: #121212;
+}
+.btn-active1{
+	text-decoration: none;
+	transition :all linear 0.2s;
+	color: white;
+	border-bottom: solid 4px white !important;
+
 }
 inner>.item>img {
   margin-left: 0px !important;
@@ -133,6 +158,7 @@ inner>.item>img {
   }
   
 .container2 {
+	background-color: #fff;
 	width:100%;
    padding-right: 0px !important; 
    padding-left: 0px !important; 
@@ -174,7 +200,20 @@ inner>.item>img {
 	background-color: #171717;
 }
 
+.grey-box{
+	background-color: #171717;
+	padding: 30px;
+	min-height: 400px;
+	position: relative;
 
+}
+.orange-box{
+	background-color: #e48e15;
+	padding: 30px;
+	min-height: 400px;
+	position: relative;
+
+}
 
 
 .links1 a{
@@ -187,12 +226,13 @@ font-family: Roboto;
 font-size: 18px;
 text-decoration: none;
 color: white;
+font-weight: 700;
 }
 
 .links1 a:active{
 	text-decoration: none;
 	color: white;
-	border-bottom: solid 4px white;
+	border-bottom: solid 4px white !important;
 }
 .links1 a:visited{
 	text-decoration: none;
@@ -215,6 +255,7 @@ background-color: none;}
 .links{
 width: 100%;
 font-family: Roboto;
+font-weight: 500;
 font-size: 22px;
 text-decoration: none !important;
 color: white;
@@ -291,18 +332,12 @@ a:visited{
 .mobile{
 	display: none;
 }
-@media screen and (max-width: 1140px){
-	#slidernavbar{
-		display: block;
-	}
-	#mainnavbar{
-		display: none;
-	}
+@media screen and (max-width: 1268px){
+	
 	.links2{
 	padding: 4px;
 	    list-style-type: none;
 	    clear: both !important;
-	    text-align: center;
 	    font-family: Roboto;
 	    color: white;
 	    font-size: 1.2em;
@@ -315,6 +350,12 @@ a:visited{
 	}
 }
 @media screen and (max-width: 1268px) {
+	#slidernavbar{
+		display: block;
+	}
+	#mainnavbar{
+		display: none;
+	}
          .side-collapse-container{
              width:100%;
              position:relative;
@@ -322,11 +363,32 @@ a:visited{
              transition:left .4s;
          }
          .sliderimage{
-         	padding: 0 !important;
-         	margin: 0 !important;
+         	padding: 8px !important;
          }
          .icon{
          	margin-left: 4px !important;
+         }
+         .description{
+         	padding: 4px !important;
+         }
+         .grey-box, .orange-box{
+         	padding:7px;
+         	margin: 5px;
+         	min-height: 200px;
+         }
+         .grey-box h2{
+         	font-size: 1.2em;
+
+         }
+         .grey-box p{
+         	font-size: 0.8em;
+         }
+         .orange-box h2{
+         	font-size: 1.2em;
+         }
+         .orange-box p{
+         	font-size: 0.8em;
+
          }
          .mobile{
          	display: block;
@@ -359,7 +421,7 @@ a:visited{
              width:0;
          }
          .links1 {
-         	text-align: center;
+         	
          	clear: both;
          }
      }
@@ -446,6 +508,9 @@ a:visited{
 
     
 }
+.text{
+	padding: 10px;
+}
 @media only screen and (max-width: 1268px)  {
 	
 	
@@ -455,14 +520,10 @@ a:visited{
 		display: block;
 		margin-right: auto;
 	}
-	.row {
-		text-align: center !important;
-		margin-left: 4px !important;
-		margin-right: 4px !important;
-
-	}
+	
 	
 .container2 {
+	background-color: #fff;
   width: 100%;
 }
 
@@ -509,6 +570,7 @@ pre {
 @media only screen and (max-width: 997px) and (min-width: 509px) {
 	.container2{
 		width:100%;
+		background-color: #fff;
 	}
 	.logo2{
 		display: none;
@@ -623,7 +685,8 @@ pre {
 
 }
 .footer {
-    
+	margin-top:180px;
+	width: 100%;    
     bottom: 0;
     background-color: #171717;
 }
@@ -635,6 +698,132 @@ pre {
 	font-size: 22px;
 	background-color: #212121;
 }
+/*
+Fade content bs-carousel with hero headers
+Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+Image credits: unsplash.com
+*/
+
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.fade-carousel {
+    position: relative;
+    height: 65vh;
+}
+.fade-carousel .carousel-inner .item {
+    height: 65vh;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #f39c12;
+    border-color: #f39c12;
+    opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 3em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
+/********************************/
+/*            Overlay           */
+/********************************/
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: .7;
+}
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {padding: 10px 40px;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #f5f5f5;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    outline: none;
+    margin: 20px auto;
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+  background-image: url(https://ununsplash.imgix.net/photo-1416339134316-0e91dc9ded92?q=75&fm=jpg&s=883a422e10fc4149893984019f63c818); 
+}
+.fade-carousel .slides .slide-2 {
+  background-image: url(https://ununsplash.imgix.net/photo-1416339684178-3a239570f315?q=75&fm=jpg&s=c39d9a3bf66d6566b9608a9f1f3765af);
+}
+.fade-carousel .slides .slide-3 {
+  background-image: url(https://ununsplash.imgix.net/photo-1416339276121-ba1dfa199912?q=75&fm=jpg&s=9bf9f2ef5be5cb5eee5255e7765cb327);
+}
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }    
+}
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 4em; }    
+}
+
 html,body{
 	margin: 0;
 	padding: 0;

@@ -1,7 +1,7 @@
 (function()
 {
 	var app=angular
-	.module('tbi',['ngAnimate']);
+	.module('tbi',['ngAnimate', 'ui.router']);
 	app.controller('tbiController', function(){
 		this.tab = 1;
 		this.selectTab = function(setTab) {
@@ -14,32 +14,83 @@
 
 	app.controller('navController', function(){
 		this.tab = 0;
+		this.clicked = 0;
+		this.currentPage = 0;
+		this.selectPage = function(setPage) {
+			this.currentPage = setPage;
+		};
 		this.selectTab = function(setTab) {
-			if(this.tab==setTab)
-				this.tab = 0;
+			if(this.tab==setTab && this.clicked==1)
+				this.clicked = 0;
 			else
-				this.tab=setTab;
+				{
+					this.tab=setTab;
+					this.clicked = 1;
+				}
 		};
 		this.isSelected = function(checkTab){
-			return this.tab === checkTab;
+			return (this.tab === checkTab && this.clicked === 1);
+		};
+		this.onThisPage = function(checkPage){
+			return (this.currentPage === checkPage&&this.clicked===0)|| (this.clicked === 1&&this.tab ===checkPage);
 		};
 	});
 	
-
-})();
-/*app.config(function($stateProvider, $urlRouterProvider) {
+	app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 	    
-	    $urlRouterProvider.otherwise('/home');
+	    $urlRouterProvider.otherwise('/');
 	    
-	    $stateProvider
+	    
 	        
 	        // HOME STATES AND NESTED VIEWS ========================================
-	        .state('home', {
-	            url: '/home',
-	            templateUrl: 'partial-home.html'
+	        $stateProvider.state('home', {
+	            url: '/',
+	            templateUrl: 'templates/home.html'
 	        })
 	        
 	        // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
 	        .state('about', {
+	        	url: '/about',
+	        	templateUrl: '/templates/about.html'
 	            // we'll get to this in a bit       
-	});*/
+	        })
+	        .state('csrpartnership', {
+	        	url: '/csrpartnership',
+	        	templateUrl: '/templates/csrpartnership.html'
+	            // we'll get to this in a bit       
+	        })
+	        .state('ourstartups', {
+	        	url: '/ourstartups',
+	        	templateUrl: '/templates/pui.html'
+	            // we'll get to this in a bit       
+	        })
+	        .state('infrastructure', {
+	        	url: '/infrastructure',
+	        	templateUrl: '/templates/infrastructure.html'
+	            // we'll get to this in a bit       
+	        });
+	}]);
+	app.controller('panelController',function(){
+		this.tab=1;
+		this.selectTab = function(setTab) {
+			this.tab = setTab;
+		};
+		this.isSelected = function(checkTab){
+			return this.tab === checkTab;
+		};
+
+
+	});	
+	app.controller('puiController',function(){
+		this.tab=1;
+		this.selectTab = function(setTab) {
+			this.tab = setTab;
+		};
+		this.isSelected = function(checkTab){
+			return this.tab === checkTab;
+		};
+
+
+	});
+
+})();
