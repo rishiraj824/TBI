@@ -28,15 +28,16 @@
     </script>
     <div ng-controller="puiController as puictrl">
  <div class="main container">
- <div ng-click="puictrl.selectTab(1)"class="puiheads col-lg-4 col-md-4 col-sm-4 col-xs-4">
- <h1>Projects Under Startup</h1>
+ <div  class="puiheads col-lg-4 col-md-4 col-sm-4 col-xs-4">
+ <a href="#" ng-click="puictrl.selectTab(1)" ng-class="{ 'btn-active2' : puictrl.isSelected(1) }">Projects Under Incubation</a>
      
  </div>
-     <div ng-click="puictrl.selectTab(2)"class="puiheads col-lg-4 col-md-4 col-sm-4 col-xs-4">
- <h1>Graduated Startups</h1>
+     <div  class="puiheads col-lg-4 col-md-4 col-sm-4 col-xs-4">
+ <a href="#" ng-click="puictrl.selectTab(2)" ng-class="{ 'btn-active2' : puictrl.isSelected(2) }">Graduated Startups</a>
      
- </div><div ng-click="puictrl.selectTab(3)"class="puiheads col-lg-4 col-md-4 col-sm-4 col-xs-4">
- <h1>Anchor Companies</h1>
+ </div>
+ <div  class="puiheads col-lg-4 col-md-4 col-sm-4 col-xs-4">
+ <a href="#" ng-click="puictrl.selectTab(3)" ng-class="{ 'btn-active2' : puictrl.isSelected(3) }">Anchor Companies</a>
      
  </div>
  </div>
@@ -52,10 +53,9 @@
                 <div class="card-content">
                     <span class="card-title">STARTUP</span>                    
                     <button type="button" data-openId="1" class="btn-custom pull-right" aria-label="Left Align">
-                        <img src="../images/dots_1.svg" width="5" height="23" />
+                        <img src="../images/dots_1.svg"  class="dots" />
                     </button>
-                </div><!-- card content -->
-                !-- card actions -->
+                </div>
                 <div data-cardId="1"class="card-reveal">
                     <span class="card-title">Card Title</span> <button type="button" data-closeId="2" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                     <p>Here is some more information about this product that is only revealed once clicked on.</p>
@@ -72,7 +72,7 @@
                 <div class="card-content">
                     <span class="card-title">STARTUP</span>                    
                     <button type="button" data-openId="1" class="btn-custom pull-right" aria-label="Left Align">
-                        <img src="../images/dots_1.svg" width="5" height="23" />
+                        <img src="../images/dots_1.svg"  class="dots" />
                     </button>
                 </div><!-- card content -->
                 <!-- card actions -->
@@ -102,7 +102,7 @@
                 </div>card reveal
             </div>
         </div> -->
-        <div class="col-md-4 col-md-4">
+        <div class="col-md-4 col-md-4 col-sm-4 col-xs-4">
                   <div class="card">
                       <div class="card-image">
                           <img class="img-responsive" src="../images/companylogo.jpg">
@@ -112,7 +112,7 @@
                       <div class="card-content">
                           <span class="card-title">Material Cards</span>                    
                           <button type="button" id="show" class="btn btn-custom pull-right" aria-label="Left Align">
-                              <img src="../images/dots_1.svg" width="5" height="23" />
+                              <img src="../images/dots_1.svg" class="dots" />
                           </button>
                       </div><!-- card content -->
                       <div data-cardId="4"class="card-reveal">
@@ -260,7 +260,7 @@
                     <div class="card-content">
                         <span class="card-title">Graduated Company</span>                    
                         <button type="button" data-openId="1" class="btn-custom pull-right" aria-label="Left Align">
-                            <img src="../images/dots_1.svg" width="5" height="23" />
+                            <img src="../images/dots_1.svg"  class="dots" />
                         </button>
                     </div><!-- card content -->
                     !-- card actions -->
@@ -280,7 +280,7 @@
                     <div class="card-content">
                         <span class="card-title">Graduated Company</span>                    
                         <button type="button" data-openId="1" class="btn-custom pull-right" aria-label="Left Align">
-                            <img src="../images/dots_1.svg" width="5" height="23" />
+                            <img src="../images/dots_1.svg"  class="dots" />
                         </button>
                     </div><!-- card content -->
                     <!-- card actions -->
@@ -310,7 +310,7 @@
                     </div>card reveal
                 </div>
             </div> -->
-            <div class="col-md-4 col-md-4">
+            <div class="col-md-4 col-md-4 col-sm-4 col-xs-4">
                       <div class="card">
                           <div class="card-image">
                               <img class="img-responsive" src="../images/companylogo.jpg">
@@ -320,7 +320,7 @@
                           <div class="card-content">
                               <span class="card-title">Graduated Company</span>                    
                               <button type="button" id="show" class="btn btn-custom pull-right" aria-label="Left Align">
-                                 <img src="../images/dots_1.svg" width="5" height="23" />
+                                 <img src="../images/dots_1.svg"  class="dots" />
                               </button>
                           </div><!-- card content -->
                           <div data-cardId="4"class="card-reveal">
@@ -345,7 +345,7 @@
                     <div class="card-content">
                         <span class="card-title">Anchor Company</span>                    
                         <button type="button" data-openId="1" class="btn-custom pull-right" aria-label="Left Align">
-                            <img src="../images/dots_1.svg" width="5" height="23" />
+                            <img src="../images/dots_1.svg"  class="dots" />
                         </button>
                     </div><!-- card content -->
                     !-- card actions -->
@@ -365,7 +365,7 @@
                     <div class="card-content">
                         <span class="card-title">Anchor Company</span>                    
                         <button type="button" data-openId="1" class="btn-custom pull-right" aria-label="Left Align">
-                            <img src="../images/dots_1.svg" width="5" height="23" />
+                            <img src="../images/dots_1.svg"  class="dots" />
                         </button>
                     </div><!-- card content -->
                     <!-- card actions -->
@@ -395,7 +395,7 @@
                     </div>card reveal
                 </div>
             </div> -->
-            <div class="col-md-4 col-md-4">
+            <div class="col-md-4 col-md-4 col-sm-4 col-xs-4">
                       <div class="card">
                           <div class="card-image">
                               <img class="img-responsive" src="../images/companylogo.jpg">
@@ -405,7 +405,7 @@
                           <div class="card-content">
                               <span class="card-title">Anchor Company</span>                    
                               <button type="button" id="show" class="btn btn-custom pull-right" aria-label="Left Align">
-                                  <img src="../images/dots_1.svg" width="5" height="23" />
+                                  <img src="../images/dots_1.svg"  class="dots" />
                               </button>
                           </div><!-- card content -->
                           <div data-cardId="4"class="card-reveal">

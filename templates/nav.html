@@ -28,8 +28,8 @@
              <li  class="links1" ng-class="{ 'btn-active1' : navctrl.onThisPage(3) }"ng-click="navctrl.selectTab(3);navctrl.selectPage(3); "><a  style="position: relative;padding-top: 50px;"href="#/infrastructure"> Infrastructure Access</a></li>
             
               <li  class="links1" ng-class="{ 'btn-active1' : navctrl.onThisPage(2) }"ng-click="navctrl.selectTab(2)"><a  style="position: relative;padding-top: 50px;"href="#"> Startups<span class="caret"></span></a></li>
-             <li  class="links1" ng-class="{ 'btn-active1' : navctrl.onThisPage(5) }"ng-click="navctrl.selectTab(5);navctrl.selectPage(5);"><a  style="position: relative;padding-top: 50px;"href="#">Projects & Partnership</a></li>
-             <li  class="links1" ng-class="{ 'btn-active1' : navctrl.onThisPage(6) }"ng-click="navctrl.selectTab(6);navctrl.selectPage(6);"><a  style="position: relative;padding-top: 50px;"href="#">Training</a></li>
+             <li  class="links1" ng-class="{ 'btn-active1' : navctrl.onThisPage(5) }"ng-click="navctrl.selectTab(5);navctrl.selectPage(5);"><a  style="position: relative;padding-top: 50px;"href="#/projects">Projects & Partnership</a></li>
+             <li  class="links1" ng-class="{ 'btn-active1' : navctrl.onThisPage(6) }"ng-click="navctrl.selectTab(6);navctrl.selectPage(6);"><a  style="position: relative;padding-top: 50px;"href="#/training">Training</a></li>
            </ul>
          </nav>
        </div>
@@ -40,18 +40,18 @@
   </div>
   <div class="col-lg-1 col-md-1 " style="width:2%"><img style="margin-top:-21px"src="images/line.png"></div>
   <ul class="menu2" style="width:90%;display: flex;">
-    <li class="linkdrop"><a ng-click="navctrl.selectTab(1);navctrl.selectPage(1);" href="">Funding</a></li>
-    <li class="linkdrop"><a ng-click="navctrl.selectTab(1);navctrl.selectPage(1);" href="">Mentoring</a></li>
-    <li class="linkdrop"><a ng-click="navctrl.selectTab(1);navctrl.selectPage(1);" href="">Talent</a></li>
+    <li class="linkdrop"><a ng-click="navctrl.selectTab(1);navctrl.selectPage(1);" href="#/funding">Funding</a></li>
+    <li class="linkdrop"><a ng-click="navctrl.selectTab(1);navctrl.selectPage(1);" href="#/mentoring">Mentoring</a></li>
+    <li class="linkdrop"><a ng-click="navctrl.selectTab(1);navctrl.selectPage(1);" href="#">Talent</a></li>
     <li class="linkdrop"><a ng-click="navctrl.selectTab(1);navctrl.selectPage(1);" href="#/csrpartnership">CSR</a></li>
-    <li class="linkdrop"><a ng-click="navctrl.selectTab(1);navctrl.selectPage(1);" href="">Service Tax Exemption</a></li>
+    <li class="linkdrop"><a ng-click="navctrl.selectTab(1);navctrl.selectPage(1);" href="#/taxexemption">Service Tax Exemption</a></li>
   </ul>
   </div>
  </div>
   <div id="osdrop" ng-animate=" 'animate' " class="container-fluid dropdown1 animate-show"  ng-show="navctrl.isSelected(2)">
    <div class="col-lg-12 col-md-12">
    <div class="borderight col-lg-3 col-md-3">
-       <h1 class="linkhead"> <br>STARTUPS</h1>
+       <h1 class="linkhead">STARTUPS</h1>
    </div>
    <div class="col-lg-1 col-md-1"><img style="margin-top:-21px"src="images/line.png"></div>
    <ul>
@@ -90,8 +90,8 @@
             <li class="dropdown links2">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Incubation Support<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                      <li><a href="#">Funding</a></li>
-                      <li><a href="#">Mentoring</a></li>
+                      <li><a href="#/funding">Funding</a></li>
+                      <li><a href="#/mentoring">Mentoring</a></li>
                       <li><a href="#">Talent</a></li>              
                       <li><a href="#/csrpartnership">CSR</a></li>
                       <li><a href="#">Service Tax Exemption</a></li>
@@ -107,8 +107,8 @@
                       <li><a href="#/ourstartups">Anchor<br> Companies</a></li>
                     </ul>
             </li>
-            <li class="links2"><a href="#">Projects & Partnership</a></li>
-            <li class="links2"><a href="#">Training</a></li>
+            <li class="links2"><a href="#/projects">Projects & Partnership</a></li>
+            <li class="links2"><a href="#/training">Training</a></li>
             
           </ul>
         </nav>

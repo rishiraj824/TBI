@@ -15,10 +15,60 @@
 	font-family: Roboto;
 	font-weight: 700;
 }
+.h5 {
+	font-weight: 400;
+	font-size: 20px;
+	font-family: Roboto;
+	color: black;
+}
+.h6{
+	font-size: 18px;
+	font-weight: 300;
+	color: black;
+	font-family: Roboto;
+}
+
+table{
+	background-color: white;
+}
+.white-box{
+	width: 100%
+	min-height:400px;
+	background-color: white;
+}
+.white-box  p{
+	font-size: 18px;
+	font-weight: 300;
+	color: black;
+	font-family: Roboto;
+}
+.white-box h2{
+	font-size: 24px;
+	font-weight: 600;
+	color: black;
+	font-family: Roboto;
+}
+.imageabout1{
+	width: 100%;
+	max-width: 200px;
+	margin:auto;
+	vertical-align: middle;
+
+}
 @media screen and (max-width: 768px){
 	.panel1 a{
 		font-size: 1.8em !important;
 		font-weight: 400;
+	}
+	.h6{
+		font-size: 0.6em;
+	}
+	.white-box p{
+		font-size: 0.7em;
+	}
+	.white-box h2{
+		font-size: 0.8em;
+		font-weight: 600;
 	}
 	.panelmainmenu{
 		font-size: 0.7em !important ;
@@ -34,6 +84,9 @@
 		height: 20px;
 	}
 	 
+}
+.btn-active{
+	color: #e6882c;
 }
 @media screen and (min-width: 768px)and (max-width: 1268px){
 	.panel1 h1{

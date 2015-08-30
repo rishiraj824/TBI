@@ -1,5 +1,5 @@
 <script type="text/javascript">
-$(function () {
+/*$(function () {
 
 	// body...
 	$('.arrow-img').on('click',function(){
@@ -8,35 +8,237 @@ $(function () {
 });
 });
 
-
+*/
 </script>
-<div class="container panel1 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-<a href="">Infrastructure Access</a>
+<div class="container panel1 col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+<a >Infrastructure Access</a>
 </div>
 
-<div class="container">
-<div class="panel panel-default" ng-controller="panelController as panelctrl">
+<div class="container"  ng-controller="panelController as panelctrl">
+<div class="panel panel-default">
   <!-- Default panel contents -->
   <div class="row">
   <div class="arrow panel-heading col-lg-6 col-md-6 col-sm-6 col-xs-6 panelmainmenu">Product Innovation Center</div>
   </div>
   <!-- List group -->          
             
-   <div id="menu"  >
+   <div id="menu" >
    <div class="panel list-group">
-   <div href="#" class="list-group-item panelmenu arrow"   data-arrowID="5" data-parent="#menu"><span><a style="margin-right:5px; " ><img class="arrow-img rotate2" src="../images/Arrow2.png"/></a></span>Rapid Prototyping</div>
-    <div class="list-group-item panelmenu arrow" role="button" data-toggle="collapse" href="#sm1" aria-expanded="false" data-target="#sm1" aria-controls="sm1"><span><a style="margin-right:5px; "><img class="arrow-img rotate2" src="../images/Arrow2.png"/></a></span>Analytical Instrumentaion</div>
+   <div href="#" class="list-group-item panelmenu arrow" ng-class="{ 'btn-active2' : panelctrl.isSelected(1) }" ng-click="panelctrl.selectTab(1)"  data-parent="#menu"><span><a style="margin-right:5px;" href="#" ><img class="arrow-img rotate2" src="../images/Arrow2.png"/></a></span>Rapid Prototyping</div>
+    <div class="list-group-item panelmenu arrow" role="button" data-toggle="collapse" href="#sm1" aria-expanded="false" data-target="#sm1" aria-controls="sm1"><span><a style="margin-right:5px; "><img class="arrow-img rotate2" src="../images/Arrow2.png"/></a></span>Analytical Instrumentation</div>
      <div id="sm1" class="sublinks collapse">
-     <a href="" class="panellist list-group-item medium"> Gas Chromatograph</a>
-     <a href="" class="panellist list-group-item medium"> HPLC</a>
-     <a href="" class="panellist list-group-item medium"> Atomic Absorption Spectrophotmeter</a>
-     <a href="" class="panellist list-group-item medium"> UV-Vi's</a>              
+     <a href="" class="panellist list-group-item medium"  ng-class="{ 'btn-active2' : panelctrl.isSelected(2) }" ng-click="panelctrl.selectTab(2)"> Gas Chromatograph</a>
+     <a href="" class="panellist list-group-item medium" ng-class="{ 'btn-active2' : panelctrl.isSelected(3) }" ng-click="panelctrl.selectTab(3)"> HPLC</a>
+     <a href="" class="panellist list-group-item medium" ng-class="{ 'btn-active2' : panelctrl.isSelected(4) }" ng-click="panelctrl.selectTab(4)"> Atomic Absorption Spectrophotmeter</a>
+     <a href="" class="panellist list-group-item medium" ng-class="{ 'btn-active2' : panelctrl.isSelected(5) }" ng-click="panelctrl.selectTab(5)"> UV-Vi's</a>              
     </div>   
-    <div href="#" class="list-group-item panelmenu arrow"  class="arrow" data-arrowID = "6" data-parent="#menu"><span><a style="margin-right:5px; " ><img class="arrow-img rotate2" src="../images/Arrow2.png"/></a></span>Office Space</div>
+    <div href="#" class="list-group-item panelmenu arrow"  ng-class="{ 'btn-active2' : panelctrl.isSelected(5) }" ng-click="panelctrl.selectTab(6)" class="arrow"data-parent="#menu"><span><a style="margin-right:5px; "><img class="arrow-img rotate2" src="../images/Arrow2.png"/></a></span>Office Space</div>
    </div>
    </div>
    </div>
+  
+   
+   <div id="rapid" class="container white-box" ng-show="panelctrl.isSelected(1)">
+                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                 <h2>Here is a Solution to see your Idea’s come Alive:</h2>
+
+              <p>Vellore Institute of Technology –Technology Business Incubator (VIT-TBI) is offering Product development support with its Rapid Prototyping Facility. In order to cater to the emerging requirements (multiple materials, bigger build sizes and material properties equivalent to that of injection moulded parts), VITTBI expanded the Rapid Prototyping facility with a FDM Titan model Stratasys make equipment.</p>
+              </div>
+              <div class="row">
+              <div class="col-lg-3 col-md-3 col-xs-12 col-sm-3">
+               <img  class="imageabout1" src="../images/rapid1.jpg" />
+               </div>
+               <div class="col-lg-9 col-md-9 col-xs-12 col-sm-9">
+                <h2>Rapid Prototyping : FDM TITAN Ti</h2>
+                   <div class="table-responsive">
+                 <table class="table pull-left col-md-8 "> 
+                 <tbody> 
+                 <tr> 
+                 <td class="h6"> <strong>Make :</strong></td> <td> </td><td class="h5">Stratasys USA</td> </tr>  
+                  <tr> <td class="h6"><strong>Model :</strong></td> <td> </td> <td class="h5"> FDM TITAN Ti</td> </tr> 
+                  <tr> <td class="h6"><strong>Bed Size :</strong></td> <td> </td> <td class="h5">406 x 355 x 406 MM.</td> </tr>
+                   <tr> <td class="h6"><strong>Multiple Materials : </strong></td> <td> </td> <td class="h5">ABS, ABSi, PC, PC-ABS, PC-ISO, PPSF.</td> </tr> 
+                   
+                     </tbody> 
+                     </table>
+              </div>
+              </div>
+              </div>
+              <div class="row">
+              <div class="col-lg-3 col-md-3 col-xs-12 col-sm-3">
+               <img class="imageabout1"  src="../images/rapid3.jpg" />
+               </div>
+               <div class="col-lg-9 col-md-9 col-xs-12 col-sm-9">
+                  <h2>Rapid Prototyping</h2>
+                   <div class="table-responsive">
+                 <table class="table pull-left col-md-8 "> 
+                 <tbody> 
+                 <tr> 
+                 <td class="h6"> <strong> Make :</strong></td> <td> </td><td class="h5">Stratasys USA </td> </tr>  
+                  <tr> <td class="h6"><strong>Model :</strong></td> <td> </td> <td class="h5">FDM-DIMENSION-0933, Version 2.5</td> </tr> 
+                  <tr> <td class="h6"><strong>Build Size :</strong></td> <td> </td> <td class="h5">203 x 203 x 305 mm</td> </tr>
+                   <tr> <td class="h6"><strong>Material :</strong></td> <td> </td> <td class="h5"> ABS Plastic</td> </tr> 
+                   <tr> <td class="h6"><strong>Thickness :</strong></td> <td> </td> <td class="h5">0.245mm or 0.33mm</td> </tr> 
+                   <tr> <td class="h6"><strong>Wall Thickness :</strong></td> <td> </td> <td class="h5">0.60mm</td> </tr>
+                    
+                     </tbody> 
+                     </table>
+              </div>
+              </div>
+              </div>
+              <div class="row">
+              <div class="col-lg-3 col-md-3 col-xs-12 col-sm-3">
+                <img class="imageabout1"  src="../images/rapid4.jpg" />
+                </div>
+                <div class="col-lg-9 col-md-9 col-xs-12 col-sm-9">
+                      <h2>Prodigy</h2>
+                   <div class="table-responsive">
+                 <table class="table pull-left col-md-8 "> 
+                 <tbody> 
+                 <tr> 
+               <td class="h6"> <strong> Make :</strong></td> <td> </td><td class="h5">Stratasys USA </td> </tr>  
+                  <tr> <td class="h6"><strong>Model :</strong></td> <td> </td> <td class="h5">FDM-Prodigy Plus-P2824, Version 4.5</td> </tr> 
+                  <tr> <td class="h6"><strong>Build Size :</strong></td> <td> </td> <td class="h5">203 x 203 x 305 mm</td> </tr>
+                   <tr> <td class="h6"><strong>Material :</strong></td> <td> </td> <td class="h5"> ABS Plastic</td> </tr> 
+                   <tr> <td class="h6"><strong>Thickness :</strong></td> <td> </td> <td class="h5">0.1778mm (Prodigy Plus) 0.245mm or 0.33mm</td> </tr> 
+                   <tr> <td class="h6"><strong>Wall Thickness :</strong></td> <td> </td> <td class="h5">0.60mm</td> </tr>
+                    
+                     </tbody> 
+                     </table>
+                     </div>
+              </div>
+              </div>
+              <div class="row">
+              <div class="col-lg-5 col-md-5 col-xs-12 col-sm-5">
+              <h2>This system builds models including external features quickly, directly from CAD STL files.</h2>
+
+              <p>ACCEPTABLE FILE FORMATS :</p>
+              <ul>     
+                <li>Auto CAD</li>
+                <li>CATIA  </li>
+                <li>I-DEAS</li>
+                <li>Image ware</li>
+                <li>Pro / Engineer</li>
+                <li>Solid Edge & Solid Works</li>
+                <li> Unigraphics</li>
+              </ul>
+              </div>
+              <div class="col-lg-5 col-md-5 col-xs-12 col-sm-5">
+                <img class="imageabout1"  src="../images/customers.jpg" />
+                 </div>
+                 </div>
    </div>
+
+
+
+   <div id="gc" class="container white-box"ng-show="panelctrl.isSelected(2)" >
+           <div class="row">
+             <div class="col-lg-3 col-md-3 col-xs-12 col-sm-3">
+             <img class="imageabout1"src="../images/gas_chromatograph.jpg">
+             </div>
+             <div class="col-lg-9 col-md-9 col-xs-12 col-sm-9">
+             <h2>GAS CHROMATOGRAPH</h2>
+             <table class="table pull-left col-md-8 "> 
+           <tbody> 
+           <tr> 
+         <td class="h6"> <strong> Model :</strong></td> <td> </td><td class="h5"> NUCON 5765  </td> </tr>
+            <tr> <td class="h6"><strong>Column : </strong></td> <td> </td> <td class="h5">3% OV –101 & 15% DEGS
+        </td> </tr> 
+            <tr> <td class="h6"><strong>Capillary Column  :</strong></td> <td> </td> <td class="h5"> BPX 70</td> </tr>
+             <tr> <td class="h6"><strong>Detector : </strong></td> <td> </td> <td class="h5">Flame Ionization Detector & Thermal Control Detector</td> </tr> 
+             <tr> <td class="h6"><strong>Injector  :</strong></td> <td> </td> <td class="h5">Dual Injector</td> </tr> 
+              <tr> <td class="h6"><strong>Controller  :</strong></td> <td> </td> <td class="h5">µp Based Temperature Controller</td> </tr> 
+              
+               </tbody> 
+               </table>
+               </div>
+               </div>
+   </div>
+   
+   <div id="hplc"  class="container white-box"ng-show="panelctrl.isSelected(3)" >
+   <div class="row">
+   <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+     <h2>HIGH PERFORMANCE LIQUID CHROMATORGRAPH</h2>
+
+      <table class="table pull-left col-md-8 "> 
+         <tbody> 
+         <tr> 
+       <td class="h6"> <strong> Model :</strong></td> <td> </td><td class="h5"> Waters  </td> </tr>
+          <tr> <td class="h6"><strong>Pump :</strong></td> <td> </td> <td class="h5">Waters 1525 Binary HPLC Pump (Max. Pressure: 6000 psi & Flow Rate: 0 – 10ml/min)</td> </tr> 
+          <tr> <td class="h6"><strong>Detector  :</strong></td> <td> </td> <td class="h5"> Waters 2487 Dual l Absorbance Detector (l : 190 to 700 nm)</td> </tr>
+           <tr> <td class="h6"><strong>Column  : </strong></td> <td> </td> <td class="h5">Symmetry C 18 5 µm 4.6 x 150 mm</td> </tr> 
+           <tr> <td class="h6"><strong>Injector  :</strong></td> <td> </td> <td class="h5">Rheodyne Manual Injector with5µ1, 20µ1, 50µ1 & 200µ1 loops</td> </tr> 
+           
+            
+             </tbody> 
+             </table>
+             </div>
+             </div>
+   </div>
+   
+   <div id="aas" class="container white-box" ng-show="panelctrl.isSelected(4)" >
+           <div class="row">
+             <div class="col-lg-3 col-md-3 col-xs-12 col-sm-3">
+               <img class="imageabout1"src="../images/atomic_main.jpg">
+               </div>
+               <div class="col-lg-9 col-md-9 col-xs-12 col-sm-9">
+                 <h2> Atomic Absorption Spectrometer</h2>
+                 <div class="table-responsive">
+          <table class="table pull-left col-md-8 "> 
+             <tbody> 
+             <tr> 
+           <td class="h6"> <strong> Model :</strong></td> <td> </td><td class="h5"> VARIAN SPECTRAA240   </td> </tr>
+              <tr> <td class="h6"><strong>Sample Volume :</strong></td> <td> </td> <td class="h5">Air/Acetylene burner, N2O/Acetylene burner</td> </tr> 
+              <tr> <td class="h6"><strong>Burner :</strong></td> <td> </td> <td class="h5">Ag, Al, As, Au, B, Ba, Ca, Cd, Co, Cr, Cs, Cu, Fe, Hg, Mg Mn, Mo, Ni, Pb, Pt, Se, Si, Sn, Ti, Zn</td> </tr>
+               <tr> <td class="h6"><strong>Application :</strong></td> <td> </td> <td class="h5"> To measure heavy metals in agricultural, mineral, industrial, chemical, petroleum and pollution fields</td> </tr> 
+                 </tbody> 
+                 </table>
+                 </div>
+                 </div>
+                 </div>
+   </div>
+   
+   <div id="uv" class="container white-box"  ng-show="panelctrl.isSelected(5)">
+      <div class="row">
+           <div class="col-lg-3 col-md-3 col-xs-12 col-sm-3">
+            <img class="imageabout1"  src="../images/uviv.jpg" />
+            </div>
+            <div class="col-lg-9 col-md-9 col-xs-12 col-sm-9">
+            <h2> UV-IV's</h2>
+               <div class="table-responsive">
+           <table class="table pull-left col-md-8 "> 
+           <tbody> 
+           <tr> 
+         <td class="h6"> <strong> Model :</strong></td> <td> </td><td class="h5"> Hitachi U-2800  </td> </tr>
+            <tr> <td class="h6"><strong>Optics :</strong></td> <td> </td> <td class="h5">Double Beam</td> </tr> 
+            <tr> <td class="h6"><strong>Wavelength Range :</strong></td> <td> </td> <td class="h5">190 to 1100 nm</td> </tr>
+             <tr> <td class="h6"><strong>Stray Light :</strong></td> <td> </td> <td class="h5">0.05% or less</td> </tr> 
+             <tr> <td class="h6"><strong>Wavelengh Accuracy :</strong></td> <td> </td> <td class="h5">+.3/-.3 nm</td> </tr> 
+             <tr> <td class="h6"><strong>Wavelengh Sacn Speed :</strong></td> <td> </td> <td class="h5"> 10,100,200,400, 800, 1200, 2400, 3000 nm/min</td> </tr>
+                <tr> <td class="h6"><strong>Light Source :</strong></td> <td> </td> <td class="h5">Deuterium Lamp, Tungsten Lodide Lamp (AutomaticSwitching)</td> </tr> 
+             <tr> <td class="h6"><strong>Detector : </strong></td> <td> </td> <td class="h5"> Silicon Photodiode</td> </tr>
+              
+              
+               </tbody> 
+               </table>
+        </div>
+        </div>
+        </div>
+   </div>
+   <div id="office" class="container white-box"ng-show="panelctrl.isSelected(6)">
+        <div class="row">
+         <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+         <h2>A Conference room with LCD projection facility / Discussion Hall / Photocopier / DTP / Scanner / Telephone – Fax / Secretarial Access.</h2>
+         </div>
+         <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+           <img class="imageabout1"  src="../images/conference.jpg" />
+           <img class="imageabout1"  src="../images/hall.jpg" />
+           </div>
+         </div>
+         </div>
+  
+    </div>
+
    
       
             

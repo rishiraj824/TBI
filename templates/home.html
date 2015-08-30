@@ -25,7 +25,7 @@
       <div class="slide-1"></div>
       <div class="hero">
         <hgroup>
-            <h1 style="color:yellow;">YOU INNOVATE!!<br>WE INCUBATE!!</h1>        
+            <img src="../images/slogan.png" style="max-width:500px;width:100%;max-height:480px;">        
             
       </div>
     </div>
@@ -38,7 +38,7 @@
             <h2 style="color:#e6882c">Top-Notch Facilities.</h2>        
             <p>Lorem ipsum dolor sit amet, consectetur adscing elit. Mauris ac mauris auctor lorem si.</p>
         </hgroup>       
-        <button class="btn btn-hero btn-lg" role="button">Learn More</button>
+        <button class="btn btn-hero btn-lg" href="#/apply" role="button">Apply Now</button>
       </div>
     </div>
     <div class="item slides">
@@ -65,28 +65,28 @@ technology venture.</p>
   
      <div class="container">
     <div class="description row ">
-        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
           <div class="grey-box">
-            <h2 style="color:white; font-family:Roboto;font-weight:500;font-size:28px;">Startups Under Incubation</h2>
-            <p style="color:white; font-family:Roboto;font-weight:300;font-size:18px;">Lorem ipsum dolor sit amet, consectetur adscing elit. Mauris ac mauris auctor lorem si.</p>
-            <img src="../images/rocket.png" style="position:absolute;bottom:0;right:0;">
-            <a style="font-family:Roboto;font-weight:400;color:white;font-size:18px;left:10px;bottom:8px;position:absolute" href="#">Learn More</a>
+            <h2>Startups Under Incubation</h2>
+            <p >Lorem ipsum dolor sit amet, consectetur adscing elit. Mauris ac mauris auctor lorem si.</p>
+            <img src="../images/rocket.png" class="back">
+            <a class="learnmore" href="#/ourstartups">Learn More</a>
           </div>
           </div>
-           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
            <div class="grey-box">
-            <h2 style="color:white; font-family:Roboto;font-weight:500;font-size:28px;">Graduated Startups</h2>
-            <p style="color:white; font-family:Roboto;font-weight:300;font-size:18px;">Lorem ipsum dolor sit amet, consectetur adscing elit. Mauris ac mauris auctor lorem si.</p>
-            <img src="../images/persona.png" style="position:absolute;bottom:0;right:0;">
-            <a style="font-family:Roboto;font-weight:400;color:white;font-size:18px;left:10px;bottom:8px;position:absolute" href="#">Learn More</a>
+            <h2> Graduated Startups</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adscing elit. Mauris ac mauris auctor lorem si.</p>
+            <img src="../images/persona.png" class="back">
+            <a class="learnmore" href="#/ourstartups">Learn More</a>
             </div>
           </div>
-           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
            <div class="orange-box">
-            <h2 style="color:white; font-family:Roboto;font-weight:500;font-size:28px;">Something Else</h2>
-            <p style="color:white; font-family:Roboto;font-weight:300;font-size:18px;">Lorem ipsum dolor sit amet, consectetur adscing elit. Mauris ac mauris auctor lorem si.</p>
-            <img src="../images/folks.png" style="position:absolute;bottom:0;right:0;">
-            <a style="font-family:Roboto;font-weight:400;color:white;font-size:18px;left:10px;bottom:8px;position:absolute" href="#">Learn More</a>
+            <h2>Something Else</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adscing elit. Mauris ac mauris auctor lorem si.</p>
+            <img src="../images/folks.png" class="back">
+            <a class="learnmore" href="#/ourstartups">Learn More</a>
             </div>
           </div>
             
@@ -96,9 +96,9 @@ technology venture.</p>
     <div id="Mainbody" class="side-collapse-container" ng-controller="tbiController as tbictrl">
  <div class="sliders">
     <div id="wrap" class="links">
-      <li class="menu col-lg-6 col-md-6 col-sm-6 col-xs-6" ng-class="{ 'btn-active' : tbictrl.isSelected(1) }" ng-click="tbictrl.selectTab(1)"><a href="#"data-id="upc">Upcoming Events</a>
+      <li class="menu col-lg-6 col-md-6 col-sm-6 col-xs-6" ng-class="{ 'btn-active' : tbictrl.isSelected(1) }" ng-click="tbictrl.selectTab(1)"><a class="linkicons"href="#"data-id="upc">Recent Events</a>
       <span><img class="icon"src="images/upc.png"></span></li>
-      <li class="menu col-lg-6 col-md-6 col-sm-6 col-xs-6" ng-class="{ 'btn-active' : tbictrl.isSelected(2) }" ng-click="tbictrl.selectTab(2)"><a href="#"data-id="news">Latest News</a>
+      <li class="menu col-lg-6 col-md-6 col-sm-6 col-xs-6" ng-class="{ 'btn-active' : tbictrl.isSelected(2) }" ng-click="tbictrl.selectTab(2)"><a class="linkicons"href="#"data-id="news">Buzz Feed </a>
       <span><img class="icon"src="images/events.png"></span> </li>
     </div>
     </div>
@@ -116,21 +116,27 @@ technology venture.</p>
       <div class="carousel-inner" role="listbox">
         <div class="item container active">
         <div class="row">
-          <img class="col-lg-4 col-md-4 col-sm-6 col-xs-6 sliderimage" src="images/sliderimage1.jpg" alt="Chania">
+          <img class="col-lg-4 col-md-4 col-sm-6 col-xs-6 sliderimage" src="../images/sliderimage.jpg" alt="Chania">
           <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6 text">
-              <h1>Event Name</h1>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-              <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
+              <h1>Unplugged, Bangalore</h1>
+              <p class="pdescription">Unplugged is a popular startup conference and brings together amazing entrepreneurs, investors and geeks. VITTBI participates in their conferences and promotes the services of TBI. VITTBI took part in the following :
+                <ul>
+                <li>Unplugged an event organized by Pluggdin focusing on Technology Startups in Bangalore on 7th July, 2012.</li>
+                <li>Unplugged event on 20th June 2015 in Bangalore</li>
+                <li>Unplugged Event on 8th June, 2013, Bangalore.</li>
+                </ul>
+                </p>
+              <img href="#events" class="km" src="images/km.png">
           </div>
         </div>
        </div>
         <div class="item container">
         <div class="row">
-          <img class="col-lg-4 col-md-4 col-sm-6  col-xs-6 sliderimage" src="images/sliderimage1.jpg" alt="Chania">
+          <img class="col-lg-4 col-md-4 col-sm-6  col-xs-6 sliderimage" src="../images/sliderimage2.jpg" alt="Chania">
           <div class="col-lg-8 col-md-8 col-sm-6  col-xs-6 text">
-              <h1>Event Name</h1>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-              <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
+              <h1>TiE Chennai</h1>
+              <p class="pdescription">The Indus Entrepreneurs(TiE) has a singular focus on wealth creation through entrepreneurship by inspiring and educating budding entrepreneurs among several other activities. TiE holds regular workshops and networking meetings and VITTBI makes the best use of this opportunity to promote incubation at VITTBI. </p>
+              <img href="#" class="km" src="images/km.png">
           </div>
           </div>
          
@@ -138,22 +144,31 @@ technology venture.</p>
 
         <div class="item container">
         <div class="row">
-          <img class="col-lg-4 col-md-4 col-sm-6  col-xs-6 sliderimage" src="images/sliderimage1.jpg" alt="Flower">
+          <img class="col-lg-4 col-md-4 col-sm-6  col-xs-6 sliderimage" src="../images/sliderimage3.jpg" alt="Flower">
           <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6 text">
-              <h1>Event Name</h1>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-              <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
+              <h1>Silicon India Startup City</h1>
+              <p class="pdescription"> VITTBI took part in the exhibitions organized by Silicon India Startup city in Chennai and Bangalore
+              <ul>
+                      <li>Chennai on 20th March 2010</li>
+                      <li>Bangalore on 28th May, 2011</li>
+                      <li>25th February, 2012</li>
+                      <li>Siliconindia Startupcity, 2nd June 2012</li>
+                      <li>Silicon India in Bangalore on 22nd June, 2013</li>
+                      </ul></p>
+              <img href="#" class="km"src="images/km.png">
           </div>
           </div>
         </div>
 
          <div class="item container">
         <div class="row">
-          <img class="col-lg-4 col-md-4 col-sm-6 col-xs-6 sliderimage" src="images/sliderimage1.jpg" alt="Flower">
+          <img class="col-lg-4 col-md-4 col-sm-6 col-xs-6 sliderimage" src="../images/sliderimage4.jpg" alt="Flower">
           <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6 text">
-              <h1>Event Name</h1>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-              <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
+              <h1> VITTBI and Kramski Stamping and Molding India Private Ltd., towards an Electronic cluster in Vellore District</h1>
+              <p class="pdescription">Several units in Vellore district are engaged in the manufacture of electronic components and products, and mechanical components used in electronic products, but there is no coordination among them for the purpose of availing incentives given by the Central and State governments for expanding their business activities. 
+
+                    Under these circumstances, Kramski Stamping and Molding India Private Ltd., and the Vellore Institute of Technology-Technology Business Incubator (VITTBI) organised an Electronic Cluster Initiative at the Kramski factory premises in Erayankadu village</p>
+              <img href="http://www.thehindu.com/todays-paper/tp-national/tp-tamilnadu/first-move-towards-electronic-cluster-in-vellore-district/article4816691.ece" class="km" src="images/km.png">
           </div>
           </div>
         </div>
@@ -184,21 +199,21 @@ technology venture.</p>
       <div class="carousel-inner" role="listbox">
         <div class="item container active">
         <div class="row">
-          <img class="col-lg-4 col-md-4 col-sm-6 col-xs-6 sliderimage" src="images/sliderimage1.jpg" alt="Chania">
+          <img class="col-lg-4 col-md-4 col-sm-6 col-xs-6 sliderimage" src="../images/sliderimage1.jpg" alt="Chania">
           <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6 text">
               <h1>News & Buzz</h1>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-              <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
+              <p class="pdescription">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <img href="#" class="km" src="images/km.png">
           </div>
         </div>
        </div>
         <div class="item container">
         <div class="row">
-          <img class="col-lg-4 col-md-4 col-sm-6  col-xs-6 sliderimage" src="images/sliderimage1.jpg" alt="Chania">
+          <img class="col-lg-4 col-md-4 col-sm-6  col-xs-6 sliderimage" src="../images/sliderimage1.jpg" alt="Chania">
           <div class="col-lg-8 col-md-8 col-sm-6  col-xs-6 text">
               <h1>News & Buzz</h1>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-              <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
+              <p class="pdescription">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <img href="#" class="km" src="images/km.png">
           </div>
           </div>
          
@@ -206,22 +221,22 @@ technology venture.</p>
 
         <div class="item container">
         <div class="row">
-          <img class="col-lg-4 col-md-4 col-sm-6  col-xs-6 sliderimage" src="images/sliderimage1.jpg" alt="Flower">
+          <img class="col-lg-4 col-md-4 col-sm-6  col-xs-6 sliderimage" src="../images/sliderimage1.jpg" alt="Flower">
           <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6 text">
               <h1>News & Buzz</h1>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-              <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
+              <p class="pdescription">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <img href="#" class="km" src="images/km.png">
           </div>
           </div>
         </div>
 
          <div class="item container">
         <div class="row">
-          <img class="col-lg-4 col-md-4 col-sm-6 col-xs-6 sliderimage" src="images/sliderimage1.jpg" alt="Flower">
+          <img class="col-lg-4 col-md-4 col-sm-6 col-xs-6 sliderimage" src="../images/sliderimage1.jpg" alt="Flower">
           <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6 text">
               <h1>News & Buzz</h1>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-              <img href="#" style="cursor:pointer;padding:6px;" src="images/km.png">
+              <p class="pdescription">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+              <img href="#" class="km" src="images/km.png">
           </div>
           </div>
         </div>

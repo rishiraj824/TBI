@@ -68,6 +68,41 @@
 	        	url: '/infrastructure',
 	        	templateUrl: '/templates/infrastructure.html'
 	            // we'll get to this in a bit       
+	        })
+	        .state('funding', {
+	        	url: '/funding',
+	        	templateUrl: '/templates/funding.html'
+	            // we'll get to this in a bit       
+	        })
+	        .state('mentoring', {
+	        	url: '/mentoring',
+	        	templateUrl: '/templates/mentoring.html'
+	            // we'll get to this in a bit       
+	        })
+	        .state('projects', {
+	        	url: '/projects',
+	        	templateUrl: '/templates/projects.html'
+	            // we'll get to this in a bit       
+	        })
+	        .state('training', {
+	        	url: '/training',
+	        	templateUrl: '/templates/training.html'
+	            // we'll get to this in a bit       
+	        })
+	        .state('taxexemption', {
+	        	url: '/taxexemption',
+	        	templateUrl: '/templates/servicetax.html'
+	            // we'll get to this in a bit       
+	        })
+	        .state('events', {
+	        	url: '/events',
+	        	templateUrl: '/templates/events.html'
+	            // we'll get to this in a bit       
+	        })
+	        .state('apply', {
+	        	url: '/apply',
+	        	templateUrl: '/templates/apply.html'
+	            // we'll get to this in a bit       
 	        });
 	}]);
 	app.controller('panelController',function(){
@@ -89,6 +124,7 @@
 		this.isSelected = function(checkTab){
 			return this.tab === checkTab;
 		};
+
 
 
 	});

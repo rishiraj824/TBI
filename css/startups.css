@@ -79,24 +79,38 @@ fa-ellipsis-h:before {
     color: rgba(0, 0, 0, 0.71);
     margin:20px ;
 }
-
+.btn-active2{
+    color: #e6882c;
+}
 .btn-custom{
     background-color: transparent;
     font-size:18px;
         border: 0px outset buttonface !important;
 }
+.dots{
+    width:5px;
+    height:23px;
+}
 .puiheads{
+    min-height: 80px !important;
     background-color: white;
     padding: 5px;
     cursor: pointer;
     text-align: center;
 }
-.puiheads h1{
+.puihead a:visited{
+    color: black !important;
+}
+.puiheads a:active{
+    color: #e6882c;
+}
+.puiheads a:link{
     padding: 4px;
+    margin-top: 7px;
     font-weight: 400;
     font-size: 24px;
     font-family: Roboto;
-    color: black;
+    color: black !important;
 }
 @media screen and (max-width: 768px){
     .puiheads h1{
@@ -105,9 +119,19 @@ fa-ellipsis-h:before {
     font-size: 1.2em;
     
 }
+.card .card-content .card-title, .card-reveal .card-title{
+    font-size: 0.7em;
+    font-weight: 200;    
+}
 .main{
     margin-top: 100px;
 }
+.dots{
+    width: 2px;
+    height: 18px;
+
+}
+
 }
 .main{
     margin-top: 150px;

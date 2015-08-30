@@ -41,7 +41,11 @@ display: none;
 .show-hide.ng-hide{
 	opacity: 0;
 }
-
+.text ul li {
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 300;
+}
 .text h1{
 	font-family: Roboto;
 	font-weight: bold;
@@ -77,8 +81,8 @@ display: none;
 	background-color: black;
 }
 .linkdrop{
-	width: 17%;
-	font-size: 20px;
+	width: 14%;
+	font-size: 26px;
 	font-family: Roboto;
 	font-weight: 400;
 	color: black !important;
@@ -117,9 +121,22 @@ display: none;
 	color: #e6882c !important;
 
 }
-
+.back{
+	position:absolute;
+	bottom:0;
+	right:0;
+}
+.learnmore{
+	font-family:Roboto;
+	font-weight:400;
+	color:white;
+	font-size:18px;
+	left:10px;
+	bottom:8px;
+	position:absolute;
+}
 .linkhead{
-	font-size: 24px;
+	font-size: 34px;
 	font-family: Roboto;
 	font-weight: bolder;
 	color: black;
@@ -206,6 +223,30 @@ inner>.item>img {
 	min-height: 400px;
 	position: relative;
 
+}
+.grey-box h2{
+	color:white; 
+	font-family:Roboto;
+	font-weight:500;
+	font-size:28px;
+}
+.orange-box h2{
+	color:white; 
+	font-family:Roboto;
+	font-weight:500;
+	font-size:28px;
+}
+.grey-box p{
+	color:white; 
+	font-family:Roboto;
+	font-weight:300;
+	font-size:18px;
+}
+.orange-box p{
+	color:white; 
+	font-family:Roboto;
+	font-weight:300;
+	font-size:18px;
 }
 .orange-box{
 	background-color: #e48e15;
@@ -348,6 +389,9 @@ a:visited{
 		background-color: none;
 
 	}
+	.back{
+		display: none;
+	}
 }
 @media screen and (max-width: 1268px) {
 	#slidernavbar{
@@ -461,59 +505,106 @@ a:visited{
 		
 	}
 }
+.bottomnav ul li a:link{
+	font-size: 20px;
+	font-family: Roboto;
+	color: white;
+	font-weight: 300;
+	list-style-type: none;
+}
+.bottomnav{
+	margin-top: 24px;
+	padding: 6px;
+}
+.bottomnav ul li a:hover{
+	text-decoration: underline !important;
+}
+.bottomnav ul li a:active{
+	color: white;
+	text-decoration: underline !important;
+}
+.bottomnav ul li a:visited{
+	color: white;
+	text-decoration: underline !important;
+}
+@media only screen and (min-width: 768px) and (max-width: 1268px){
+	.borderdown h4{
+		font-size: 0.8em;
+		
+	}
+	.contact h3{
+		font-size: 1.2em;
+	}
+	.contact p{
+		font-size: 0.6em;
+	}
+}
+@media only screen and (max-width: 768px){
+	.borderdown h4{
+		font-size: 0.5em;
+		
+	}
+	.linkicons{
+		display: none;
+	}
+	.pdescription{
+		display: none !important;
+	}
+	.bottomnav ul li a:link{
+		font-size: 10px;
+	}
+	.contact h3{
+		font-size: 1em;
+	}
+	.contact p{
+		font-size: 0.5em;
+	}
 
+}
 @media only screen and (max-width:1200px){
-    .underwhite {
-		  margin-left: 0px !important;
-		  font-size: 34px !important;
-		  font-weight: 100 !important;
-		  font-family: "Roboto";
-		  color: white;
-		  text-align: center !important;
-		}
-	.underwhite2 {
-	  margin-left: 0px !important;
-	  font-size: 36px !important;
-	  font-weight: bold !important;
-	  font-family: "Roboto";
-	  color: white;
-	  text-align: center !important;
-	}	
+    
 	.material{
 	font-size: 1.2em;
     padding: 1.2rem;
 	}
+
 	.carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 70%; 
     margin: auto;
 }
 .text h1{
 	font-size: 1.2em;
+	font-weight: 300;
 }
 .text p{
 	font-size:0.8em;
+	font-weight: 200;
 }
+
 .links {
 	font-size: 1em;
 }
-.contact h3{
-	font-size: 1em;
-}
-.contact p{
-	font-size: 0.5em;
-}
+
 .borderdown h3{
 	font-size: 0.5em;
 }
 
     
 }
+.km{
+	cursor:pointer;
+	padding:6px;
+}
 .text{
 	padding: 10px;
 }
+
 @media only screen and (max-width: 1268px)  {
 	
-	
+	.km{
+		width: 100px;
+		height: 40px;
+	}
 	.logo3{
 		display: block;
 		margin-left: auto;
@@ -575,7 +666,7 @@ pre {
 	.logo2{
 		display: none;
 	}
-	
+
 	
 	
 	

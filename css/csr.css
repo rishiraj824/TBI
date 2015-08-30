@@ -15,17 +15,32 @@ html,body{
 	font-weight: 300;
 	color:white;
 }
+.textcsr p a{
+	font-size:18px;
+	font-family:Roboto;
+	font-weight: 300;
+	color:#e6882c;
+	text-decoration: none;
+}
 .textcsr h1{
 	font-size:30px;
-	font-weight:bold;
+	font-weight:500;
 	font-family:Roboto;
 	color:#e6882c;
 }
 .textcsr h3{
 	font-size:28px;
-	font-weight:bold;
+	font-weight:400;
 	color:white;
 	font-family:Roboto;
+}
+.textcsr ul li{
+	font-size:18px;
+	font-weight:400;
+	color:white;
+	text-decoration: none;
+	font-family:Roboto;
+
 }
 @media screen only and (max-width: 1268px){
 	.textcsr{
