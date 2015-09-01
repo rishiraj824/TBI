@@ -3,7 +3,7 @@
 
 
 #main{
-	background-color: #212121 !important;
+	background-color: #fafafa !important;
 	margin-top: 140px;
 	}
 .same h1{
@@ -13,24 +13,24 @@
 }
 .same p{
 	font-family: Roboto;
-	color:white;
+	color:#212121;
 	font-size: 18px;
 }
 .same h5{
 	font-family: Roboto;
-	color:white;
+	color:#212121;
 	font-size: 20px;
 	font-weight: 400;
 
 }
 .same ul li{
 	font-family: Roboto;
-	color:white;
+	color:#212121;
 	font-size: 18px;
 }
 .same h3{
 	font-family: Roboto;
-	color:white;
+	color:#e6882c;
 
 }
 
@@ -91,7 +91,7 @@
    
 
 html,body{
-	background-color: #212121 !important;
+	background-color: #fafafa !important;
 	margin: 0;
 	padding: 0;
 	height: 100%;

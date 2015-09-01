@@ -13,7 +13,7 @@ html,body{
 	font-size:18px;
 	font-family:Roboto;
 	font-weight: 300;
-	color:white;
+	color:#212121;
 }
 .textcsr p a{
 	font-size:18px;
@@ -31,13 +31,13 @@ html,body{
 .textcsr h3{
 	font-size:28px;
 	font-weight:400;
-	color:white;
+	color:#212121;
 	font-family:Roboto;
 }
 .textcsr ul li{
 	font-size:18px;
 	font-weight:400;
-	color:white;
+	color:#212121;
 	text-decoration: none;
 	font-family:Roboto;
 
