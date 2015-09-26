@@ -1,13 +1,10 @@
-html,body{
-	background-color: #212121 !important;
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	position: relative;
-}
+
 .textcsr{
     margin-top:140px;
 	padding:0px;
+	background-color: white;
+	border-radius: 4px;
+	margin-bottom: 10px;
 }
 .textcsr p{
 	font-size:18px;

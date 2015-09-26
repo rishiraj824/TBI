@@ -5,6 +5,9 @@
      src: url('css/Roboto-Bold.ttf') format('truetype'),
       url('css/Roboto-Medium.ttf'), url('css/Roboto-Regular.ttf') ;
 }
+#home{
+	margin-top: 70px;
+}
 .sliders{
 	background-color: #212121;
 	width:100%;
@@ -12,20 +15,23 @@
 
 }
 .description{
-	background-color: #fafafa;
+	background-color: #212121;
 	padding: 10px;
 }
 .about{
-	background-color: #fafafa;
+	background-color: #212121;
 
 }
 .about h1{
+    font-weight:700;
+    font-size:30px;
 	font-family: Roboto;
-	color:#212121;
+	color:white;
 }
 .about p{
 	font-family: Roboto;
-	color:#212121;
+	color:white;
+	font-weight:400;font-size:20px;
 }
 #slidernavbar{
 display: none;
@@ -47,6 +53,7 @@ display: none;
 	font-weight: 300;
 }
 .text h1{
+	color: black;
 	font-family: Roboto;
 	font-weight: bold;
 	font-size: 28px;
@@ -150,12 +157,11 @@ display: none;
 	padding-top: 10px;
 
 }
-.logo2{
-	margin-left: -90px;
-}
+
 .text p{
 	font-family: Roboto;
 	font-size: 18px;
+	color: black;
 	font-weight: 300;
 }
 .btn-active{
@@ -192,7 +198,7 @@ inner>.item>img {
 	display: none;
 }
 .nav{
-	padding-bottom: 22px;
+	padding-bottom: 6px;
 	background-color: #212121;
 	top:20px;
 	justify-content:center;
@@ -201,7 +207,7 @@ inner>.item>img {
 
 }
 .nav li:active{
-	border-bottom: solid 4px white;
+	
 	text-decoration: none;
 	background-color: none!important;
 	color: white;
@@ -236,7 +242,7 @@ inner>.item>img {
 	font-weight:500;
 	font-size:28px;
 }
-.orange-box h2{
+.orange-box h2 a{
 	color:white; 
 	font-family:Roboto;
 	font-weight:500;
@@ -328,14 +334,7 @@ color: white;
 	text-decoration: none;
 	color: white;
 }
-.logo5{
-		display: block;
-		margin-left: 40%;
-		display: block;
-		vertical-align: center;
-		margin-right: auto;
-		padding: 50px;
-	}
+
 .menu li{
 	list-style-type: none !important;
 	list-style: none;
@@ -346,7 +345,7 @@ color: white;
 
 .menu{
 	list-style-type: none !important;
-	width:25%;
+	width:50%;
 	padding:20px;
 	flex-direction:row;
 	flex-wrap:no-wrap;
@@ -374,15 +373,10 @@ a:hover{
 a:active{
 	text-decoration: none !important;
 }
-a:visited{
-	text-decoration: none !important;
-}
 .logo3{
 	display: none;
 }
-.logo4{
-	display: none;
-}
+
 .mobile{
 	display: none;
 }
@@ -431,19 +425,23 @@ a:visited{
          .grey-box, .orange-box{
          	padding:7px;
          	margin: 5px;
-         	min-height: 200px;
+         	min-height: 250px;
          }
          .grey-box h2{
-         	font-size: 1.2em;
+         	font-size: 2em;
+         	padding: 12px;
 
          }
          .grey-box p{
+         	padding:6px; 
          	font-size: 0.8em;
          }
          .orange-box h2{
-         	font-size: 1.2em;
+         	font-size: 2em;
+         	padding: 12px;
          }
          .orange-box p{
+         	padding:6px; 
          	font-size: 0.8em;
 
          }
@@ -492,34 +490,8 @@ a:visited{
 
 }
 
-
-
-
-@media only screen and (max-width: 1268px){
-	.logo4{
-		display: block;
-		margin-left: auto;
-		display: block;
-		vertical-align: center;
-		margin-right: auto;
-		margin-top: -120px;
-		padding: 10px;
-	}
-	.logo5{
-		display: block;
-		margin-left: auto;
-		display: block;
-		vertical-align: center;
-		margin-right: auto;
-		padding: 10px;
-	}
-	.maintext{
-		text-align: center;
-		
-	}
-}
 .bottomnav ul li a:link{
-	font-size: 20px;
+	font-size: 16px;
 	font-family: Roboto;
 	color: white;
 	font-weight: 300;
@@ -553,6 +525,15 @@ a:visited{
 	}
 }
 @media only screen and (max-width: 768px){
+	.carousel-indicators{
+	right:25% !important;
+	width: 50% !important;
+}   .common h2{
+	font-size: 1em !important;
+}
+.common a{
+	font-size: 0.8em !important
+}
 	.borderdown h4{
 		font-size: 0.5em;
 		
@@ -564,7 +545,7 @@ a:visited{
 		display: none !important;
 	}
 	.bottomnav ul li a:link{
-		font-size: 10px;
+		font-size: 1em;
 	}
 	.contact h3{
 		font-size: 1em;
@@ -586,8 +567,8 @@ a:visited{
     margin: auto;
 }
 .text h1{
-	font-size: 1.2em;
-	font-weight: 300;
+	font-size: 1.8em;
+	font-weight: 400;
 }
 .text p{
 	font-size:0.8em;
@@ -615,7 +596,8 @@ a:visited{
 @media only screen and (max-width: 1268px)  {
 	
 	.km{
-		width: 100px;
+		margin-left: -20px;
+		width: 160px;
 		height: 40px;
 	}
 	.logo3{
@@ -660,11 +642,6 @@ a:visited{
 	color: #e0e0e0;
 }
 
-.logo2 {
-  margin-top: -60px;
-  width:440px;
-}
-
 }
 pre {
           tab-size: 8;
@@ -676,12 +653,9 @@ pre {
 		width:100%;
 		background-color: #fff;
 	}
-	.logo2{
-		display: none;
+	.common h2{
+		font-size: 1.7em !important;
 	}
-
-	
-	
 	
 	.container-fluid {
 		text-align: center !important;
@@ -700,56 +674,12 @@ pre {
 	text-align: center;
 }
 }
-@media screen and (min-width: 0px) and (max-width:1200px){
-	.main-text{
-		font-family:Helvetica Light;
-		font-size: 1.4em !important;
-		color:white;
-		font-weight: 300;
-		margin-left: 70px;
-		margin-right:40px;
-
-	}
-	.logo2{
-		display: none;
-	}
-
-
-
-}
-   
+ 
 .link:hover{
 	text-decoration: none !important;
 }
-/*.Plus {
-	border-radius: 50%;
-    color:#5d83ff;
-	width:45px;
-	height:45px;
-	padding: 4px;
-	text-align: match-parent;
-	border:2px solid #5d83ff;
-	font-size: 38px;
-	}*/
-@media screen and (min-width: 1200px){
-	.underwhite {
-	  display: inline;
-	  font-size: 54px;
-	  font-weight: 100;
-	  font-family: "Roboto";
-	  color: white;
-	}
-.underwhite2 {
-  display: inline;
-  font-size: 64px;
-  font-weight: bold;
-  font-family: "Roboto";
-  color: white;
-}
-.logo4{
-	display: none;
-}
-}
+
+
 .link_menu a:hover {
 	color: white !important;
 	text-decoration: none !important;
@@ -785,7 +715,7 @@ pre {
 	font-family: Roboto;
 	color: #fcfcfc;
 	font-weight: 200;
-	font-size: 22px;
+	font-size: 16px;
 
 }
 .footer {
@@ -796,11 +726,20 @@ pre {
 }
 .borderdown{
 	margin:0;
+	
+	background-color: #212121;
+}
+.borderdown h5{
 	text-align: center;
 	color:#fcfcfc;
 	font-family: Roboto;
-	font-size: 22px;
-	background-color: #212121;
+	font-size: 15px;
+}
+.newsletters li a{
+	font-family: Roboto !important;
+	font-size: 0.8em !important;
+	color: #fafafa !important;
+
 }
 /*
 Fade content bs-carousel with hero headers
@@ -848,12 +787,41 @@ Image credits: unsplash.com
               transform: translate3d(-50%,-50%,0);
 }
 .hero h1 {
-    font-size: 3em;    
+    font-size: 3.2em;    
+    font-weight: 800;
+    color: #2196f3;
+    margin: 0;
+    font-family: 
+
+    padding: 0;
+}
+.hero h2 {
+    font-size: 2.7em;    
     font-weight: bold;
+    margin: 0;
+    color: #7986CB;
+    font-family: Arial;
+    padding: 0;
+}
+.hero p {
+    font-size: 1em;    
+    font-weight: 400;
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+}
+.hero ul li {
+    font-size: 1em;
+     font-family: Roboto;    
+    font-weight: 400;
     margin: 0;
     padding: 0;
 }
 
+.carousel-inner{
+
+	min-height: 300px;
+}
 .fade-carousel .carousel-inner .item .hero {
     opacity: 0;
     -webkit-transition: 2s all ease-in-out .1s;
@@ -888,13 +856,20 @@ Image credits: unsplash.com
 /********************************/
 .btn.btn-lg {padding: 10px 40px;}
 .btn.btn-hero,
-.btn.btn-hero:hover,
 .btn.btn-hero:focus {
-    color: #f5f5f5;
-    background-color: #1abc9c;
-    border-color: #1abc9c;
+    color: #212121;
+    background-color: #FFEB3B;
+    font-family: Roboto;
     outline: none;
-    margin: 20px auto;
+    margin: 10px auto;
+    vertical-align: middle;
+    text-decoration: none !important;
+	font-weight: 500 !important;
+	font-size: 20px !important;
+}
+.btn.btn-hero:hover{
+	background-color: #FF8F00;
+	transition:all linear 0.2s;
 }
 
 /********************************/
@@ -902,22 +877,26 @@ Image credits: unsplash.com
 /********************************/
 .fade-carousel .slides .slide-1, 
 .fade-carousel .slides .slide-2,
-.fade-carousel .slides .slide-3 {
+.fade-carousel .slides .slide-3,
+.fade-carousel .slides .slide-4  {
   height: 100%;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  opacity: 0.7;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url(../images/network.jpg); 
+  background-image: url(../images/carouselsliderimage2.jpg); 
 }
 .fade-carousel .slides .slide-2 {
-  background-image: url(../images/network.jpg);
+  background-image: url(../images/carouselsliderimage1.jpg);
 }
 .fade-carousel .slides .slide-3 {
-  background-image: url(../images/network.jpg);
+  background-image: url(../images/carouselsliderimage4.jpg);
 }
-
+.fade-carousel .slides .slide-4 {
+  background-image: url(../images/carouselsliderimage3.jpg);
+}
 /********************************/
 /*          Media Queries       */
 /********************************/
@@ -925,10 +904,18 @@ Image credits: unsplash.com
     .hero { width: 980px; }    
 }
 @media screen and (max-width: 640px){
-    .hero h1 { font-size: 4em; }    
+    .hero h1 { font-size: 2em; }
+    .hero h2 {
+        font-size: 1.2em;    
+        font-weight: 400;
+        }  
+        .btn.btn-lg {
+        	padding: 8px;
+        	font-size: 1em;
+        }  
 }
-
 html,body{
+	background-color: #212121 !important;
 	margin: 0;
 	padding: 0;
 	height: 100%;

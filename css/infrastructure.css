@@ -1,12 +1,17 @@
 .panel1{
-	background-color: white;
-	padding: 18px;
-	min-height: 120px;
+	background-color: #fafafa;
+	padding: 16px;
+	min-height: 90px;
 	margin-top: 120px;
 	text-align: center;
 }
-.borderright{
-	border-right: solid 4px #ddd;
+.panel{
+    margin-top: 110px;
+    background-color: white !important;	
+}
+.panel-heading{
+	padding-top: 40px !important;
+	padding-left: 60px !important;
 }
 .panel1 a{
 	color: black;
@@ -14,15 +19,15 @@
 	font-family: Roboto;
 	font-weight: 700;
 }
-.h5 {
+.h51{
 	font-weight: 400;
 	font-size: 20px;
 	font-family: Roboto;
 	color: black;
 }
-.h6{
+.h61{
 	font-size: 18px;
-	font-weight: 300;
+	font-weight: 700;
 	color: black;
 	font-family: Roboto;
 }
@@ -31,11 +36,15 @@ table{
 	background-color: white;
 }
 .white-box{
-	width: 100%
-	min-height:400px;
 	background-color: white;
 }
 .white-box  p{
+	font-size: 18px;
+	font-weight: 300;
+	color: black;
+	font-family: Roboto;
+}
+.white-box  ul li{
 	font-size: 18px;
 	font-weight: 300;
 	color: black;
@@ -48,7 +57,7 @@ table{
 	font-family: Roboto;
 }
 .imageabout1{
-	background-position: cover;
+	border: 1px solid #212121;
 	background-repeat: no-repeat;
 	width: 100%;
 	max-width: 200px;
@@ -58,27 +67,41 @@ table{
 }
 @media screen and (max-width: 768px){
 	.panel1 a{
-		font-size: 1.8em !important;
+		font-size: 2em !important;
 		font-weight: 400;
 	}
-	.h6{
-		font-size: 0.6em;
+	.panel1{
+		min-height: 70px;
+		margin-top: 80px !important;
+	}
+	.innovation{
+		max-width: 70px !important;
+		height: auto;
+	}
+	.h51{
+		font-size: 0.8em;
+	}
+	.h61{
+		font-size: 0.8em;
 	}
 	.white-box p{
-		font-size: 0.7em;
+		font-size: 0.9em;
+	}
+	.white-box ul li{
+		font-size: 0.9em;
 	}
 	.white-box h2{
-		font-size: 0.8em;
+		font-size: 1em;
 		font-weight: 600;
 	}
 	.panelmainmenu{
-		font-size: 0.7em !important ;
+		font-size: 1.2em !important ;
 	}
 	.panelmenu{
-		font-size: 0.5em !important ;
+		font-size: 1em !important ;
 	}
 	.panellist{
-		font-size:0.5em !important;
+		font-size:0.9em !important;
 	}
 	.arrow-img{
 		width: 20px;
@@ -91,27 +114,33 @@ table{
 }
 @media screen and (min-width: 768px)and (max-width: 1268px){
 	.panel1 h1{
-		font-size: 1.4em !important;
+		font-size: 2em !important;
 	}
 	.panelmainmenu{
-		font-size: 1.1em !important ;
+		font-size: 1.8em !important ;
 	}
 	.panelmenu{
-		font-size: 1.2em !important ;
+		font-size: 1.4em !important ;
 	}
 	.panellist{
-		font-size:1em !important;
+		font-size:1.2em !important;
 	}
 	 
 }
 .panelmainmenu{
-	cursor: pointer;
 	font-family: Roboto;
-	font-size: 28px;
-	color: black;
-	font-weight: 500;
+    font-size: 35px;
+    color: black;
+    font-weight: 800;
+}
+.innovation{
+    max-width: 100px;
+	position: absolute;
+	left:0;
+	top:0;
 }
 .panelmenu{
+	position: relative;
 	cursor: pointer !important;
 	font-family: Roboto;
 	font-size: 20px;
@@ -124,13 +153,4 @@ table{
 	font-size: 16px;
 	color: black;
 	font-family: Roboto;
-}
-.rotate {
-    transform: rotate(90deg);
-    /*transform: rotate(180deg);*/
-    transition: .3s;
-}
-.rotate2 {
-    transform: rotate(0deg);
-    transition: .3s;
 }

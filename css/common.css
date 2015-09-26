@@ -1,11 +1,23 @@
 
+#main{
+	margin-top: 150px;
+}
 .main{
 	margin-top: 150px;
+}
+.common{
+	border-radius: 4px;
+	background-color: white;
+	padding-bottom: 30px;
+}
+.bold{
+	font-weight: 700 !important;
+	font-size: 20px;
 }
 .common p{
 	font-size: 18px;
 	font-weight: 300;
-	color: #212121;
+	color: black;
 	font-family: Roboto;
 }
 .common h1{
@@ -15,9 +27,9 @@
 	font-family: Roboto;
 }
 .common h2{
-	font-size: 24px;
-	font-weight: 600;
-	color: #212121;
+	font-size: 20px;
+	font-weight: 500;
+	color: #616161;
 	font-family: Roboto;
 }
 .common h3{
@@ -29,11 +41,12 @@
 .common ul li {
     font-size: 18px;
 	font-weight: 400;
-	color: #212121;
+	color: black;
 	text-decoration: none;
 	font-family: Roboto;
 }
 .imageabout{
+	padding: 20px;
 	width: 100%;
 	min-width: 400px;
 	margin:auto;
@@ -45,28 +58,33 @@
 .common a{
 	    font-size: 18px;
 	font-weight: 300;
-	color: #212121;
+	color: #e6882c;
 	text-decoration: underline;
 	font-family: Roboto;
 
 }
 @media screen and (max-width: 768px){
 	.common p{
-		font-size: 0.5em;
+		font-size: 0.7em;
 	}
+	.imageabout{
+		min-width: 200px ;
+		
+	}
+	
 	.common ul li {
-	    font-size: 0.5em;
+	    font-size: 0.7em;
 		font-weight: 400;
-		color: #212121;
+		color: black;
 		text-decoration: none;
 		font-family: Roboto;
 	}
 	.common h1{
-		font-size: 0.6em;
+		font-size: 1.2em;
 		font-weight: 600;
 	}
 	.common h3{
-		font-size: 0.7em;
+		font-size: 0.9em;
 		font-weight: 400;
 	}
 	.common ul li a:link{
@@ -76,30 +94,15 @@
 	
 
 }
-/* @media screen and (min-width: 768px) and (max-width: 1268px){
-	.common h1{
-		font-size: 1em;
-		font-weight: 500;
+@media screen and (max-width: 1268px){
+     .main{
+     	margin-top: 120px !important;
+     }
+     #main{
+     	margin-top: 60px !important;
+     }
+    
 	}
-	.common h3{
-		font-size: 0.8em;
-		font-weight: 300;
-	}
-	.common ul li a:link{
-	    font-size:0.7em;
-		font-weight: 300;
-	}
-	.common p{
-	font-size: 0.6em;
-	font-weight: 300;
-	color: #212121;
-	font-family: Roboto;
-}   .common ul li {
-    font-size: 0.7em;
-}
-
-} */
-/* Makes images fully responsive */
 .img-responsive{ 
  -webkit-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75); 
  -moz-box-shadow: 0px 2px 6px 2px rgba(0,0,0,0.75); 

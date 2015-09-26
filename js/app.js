@@ -38,9 +38,9 @@
 	
 	app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
 	    
+	    
+	    
 	    $urlRouterProvider.otherwise('/');
-	    
-	    
 	        
 	        // HOME STATES AND NESTED VIEWS ========================================
 	        $stateProvider.state('home', {
@@ -59,8 +59,8 @@
 	        	templateUrl: '/templates/csrpartnership.html'
 	            // we'll get to this in a bit       
 	        })
-	        .state('ourstartups', {
-	        	url: '/ourstartups',
+	        .state('underincubation', {
+	        	url: '/underincubation',
 	        	templateUrl: '/templates/pui.html'
 	            // we'll get to this in a bit       
 	        })
@@ -103,6 +103,31 @@
 	        	url: '/apply',
 	        	templateUrl: '/templates/apply.html'
 	            // we'll get to this in a bit       
+	        })
+	        .state('talent', {
+	        	url: '/talent',
+	        	templateUrl: '/templates/talent.html'
+	            // we'll get to this in a bit       
+	        })
+	        .state('graduated', {
+	        	url: '/graduated',
+	        	templateUrl: '/templates/gs.html'
+	            // we'll get to this in a bit       
+	        })
+	        .state('anchorcompanies', {
+	        	url: '/anchorcompanies',
+	        	templateUrl: '/templates/ac.html'
+	            // we'll get to this in a bit       
+	        })
+	        .state('landingsupport', {
+	        	url: '/landingsupport',
+	        	templateUrl: '/templates/softlanding.html'
+	            // we'll get to this in a bit       
+	        })
+	        .state('iprcell', {
+	        	url: '/iprcell',
+	        	templateUrl: '/templates/ipr.html'
+	            // we'll get to this in a bit       
 	        });
 	}]);
 	app.controller('panelController',function(){
@@ -124,9 +149,6 @@
 		this.isSelected = function(checkTab){
 			return this.tab === checkTab;
 		};
-
-
-
 	});
 
 })();
